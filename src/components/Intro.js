@@ -1,15 +1,16 @@
 import React from 'react'
-import Nav from './Nav'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 function Intro() {
     return (
         <>
-            <div className='text-center'>
-                <div><p className='text-[200px] font-bold'>DEVELOPER</p></div>
-                <div><p className='text-[200px] font-bold bg-black text-white'>LEEJIYEON</p></div>
-                <FontAwesomeIcon icon={faAngleDown} className='text-9xl' />
+            <div className='lg:max-w-7xl h-screen md:max-w-3xl sm:max-w-sm
+            flex mx-auto justify-center items-center'>
+                <div className='lg:tracking-[-1em] md:tracking-[-0.5em] tracking-[-0.2em] text-center leading-none'>
+                    <p className='lg:text-[180px] md:text-8xl text-6xl'>Developing</p>
+                    <p className='lg:text-[180px] md:text-8xl text-6xl font-bold frontback relative'>Frontend</p>                    
+                    <p className='lg:text-[180px] md:text-8xl text-6xl'><span className='playfair italic'>E</span>xperiences</p>
+                    <p className='lg:text-xl tracking-normal pt-10'>&copy; LeeJiyeon</p>
+                </div>
             </div>
         </>
     )
