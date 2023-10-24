@@ -5,19 +5,19 @@ function Aboutme() {
         <>
             <div className='lg:max-w-7xl lg:h-screen mx-auto relative'>
                 <div className='flex justify-center'>
-                    <div className='text-center lg:tracking-[-0.5em] md:tracking-[-0.2em] tracking-tighter leading-none lg:mt-24'>
+                    <div className='text-center lg:tracking-[-0.5em] md:tracking-[-0.2em] tracking-tighter leading-none lg:my-24'>
                         <span className='lg:text-8xl md:text-5xl text-3xl'>Developing </span>
                         <span className='lg:text-8xl md:text-5xl text-3xl font-bold frontbacksmall relative'>Frontend</span>
                         <p className='lg:text-8xl md:text-5xl text-3xl'><span className='playfair italic'>A</span>bout me</p>
                     </div>
                 </div>
-                <div>
-                    <img src="https://via.placeholder.com/500" alt="임시이미지" className='lg:absolute lg:bottom-24 lg:-right-52 lg:block hidden' />
+                <div className='lg:flex'>
+                    <img src="https://via.placeholder.com/500" alt="임시이미지" className='lg:block hidden lg:order-2' />
                     <img src="https://via.placeholder.com/300" alt="임시이미지" className='md:mx-auto md:my-10 md:block lg:hidden hidden' />
                     <img src="https://via.placeholder.com/200" alt="임시이미지" className='mx-auto my-10 block lg:hidden md:hidden' />
-                    <p className='lg:text-xl lg:tracking-tighter lg:absolute lg:bottom-24 lg:-left-52 lg:text-left
-                    text-center md:mb-20 px-[2%] mb-20'>
-                        <span className='font-bold'>안녕하세요, 끊임없이 배우고 성장하는 이지연입니다.</span><br /><br />
+                    <p className='lg:text-base lg:tracking-tighter lg:order-1 lg:text-left
+                    text-center md:mb-20 px-[2%]'>
+                        <span className='font-bold lg:text-xl'>안녕하세요, 끊임없이 배우고 성장하는 이지연입니다.</span><br /><br />
                         수학 문제 푸는 것을 좋아하고 수학 문제를 풀듯이 복잡한 개발 문제를 해결하는 것을 좋아하며,<br />
                         디자인에 대한 열정은 제 작업에 창의성을 불어넣습니다.<br />
                         이러한 다재다능함은 제 강점 중 하나입니다. <br /><br />
