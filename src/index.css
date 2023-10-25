@@ -6,7 +6,6 @@
 /* Main font Montserrat */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 /* Point font playfair */
 
 * {margin: 0; padding: 0; font-family: 'Montserrat', sans-serif;}
@@ -32,6 +31,44 @@ a {text-decoration: none; color: #000;}
         position: absolute;
         top: -20px;
         left: -35px;
+        z-index: -9;
+    }
+}
+
+/* tablet 버전일 때 */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .frontback::after {
+        content: url("./../public/img/after-500.png");
+        position: absolute;
+        top: -40px;
+        left: 0px;
+        z-index: -9;
+    }
+
+    .frontbacksmall::after {
+        content: url("./../public/img/after-250.png");
+        position: absolute;
+        top: -15px;
+        left: -20px;
+        z-index: -9;
+    }
+}
+
+/* mobile 버전일 때 */
+@media screen and (max-width: 767px) {
+    .frontback::after {
+        content: url("./../public/img/after-350.png");
+        position: absolute;
+        top: -30px;
+        left: -10px;
+        z-index: -9;
+    }
+
+    .frontbacksmall::after {
+        content: url("./../public/img/after-170.png");
+        position: absolute;
+        top: -10px;
+        left: -15px;
         z-index: -9;
     }
 }
