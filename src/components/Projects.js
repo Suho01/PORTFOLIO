@@ -6,7 +6,42 @@ function Projects() {
     const theme = useSelector(state => state.dark);
 
     const imgArray = [
-        "teampuri", "police", "seoul", "burgerking", "gongcha", "subway", "임시이미지1", "임시이미지2", "임시이미지3"
+        {
+            "img" : "teampuri",
+            "title" : "TEAM PROJECTS"
+        },
+        {
+            "img" : "police",
+            "title" : "CLONE CODINGS"
+        },
+        {
+            "img" : "seoul",
+            "title" : "CLONE CODINGS"
+        },
+        {
+            "img" : "burgerking",
+            "title" : "CLONE CODINGS"
+        },
+        {
+            "img" : "gongcha",
+            "title" : "CLONE CODINGS"
+        },
+        {
+            "img" : "subway",
+            "title" : "CLONE CODINGS"
+        },
+        {
+            "img" : "임시이미지1",
+            "title" : "TEAM PROJECTS"
+        },
+        {
+            "img" : "임시이미지2",
+            "title" : "TEAM PROJECTS"
+        },
+        {
+            "img" : "임시이미지3",
+            "title" : "CLONE CODINGS"
+        }
     ];
 
     return (
@@ -30,8 +65,9 @@ function Projects() {
                         imgArray.map((e, i) => {
                             return (
                                 <>
-                                    <li key={i} className='project relative lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer'>
-                                        <img className='w-full' src={i < 6 ? `./../../img/${e}.png` : `./../../img/${e}.jpg`} alt={i} />
+                                    <li key={i} className='project relative lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer group'>
+                                        <img className='w-full' src={i < 6 ? `./../../img/${e.img}.png` : `./../../img/${e.img}.jpg`} alt={i} />
+                                        <p key={i} className='hidden group-hover:block group-hover:absolute group-hover:z-10 group-hover:top-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-y-1/2 lg:group-hover:text-xl group-hover:font-bold lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer'>{e.title}</p>
                                     </li>
                                 </>
                             )
