@@ -1,6 +1,9 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 
 function Projects() {
+
+    const theme = useSelector(state => state.dark);
 
     const imgArray = [
         "teampuri", "police", "seoul", "burgerking", "gongcha", "subway", "임시이미지1", "임시이미지2", "임시이미지3"
@@ -8,8 +11,9 @@ function Projects() {
 
     return (
         <>
+        <div className='dark:bg-[#272929]'>
             <div className='lg:max-w-7xl mx-auto relative lg:pt-0 md:pt-0 pt-20'>
-                <div className='flex justify-center'>
+                <div className='flex justify-center dark:text-white'>
                     <div className='text-center lg:tracking-[-0.5em] md:tracking-[-0.2em] tracking-tighter leading-none lg:my-24'>
                         <span className='lg:text-8xl md:text-5xl text-3xl'>Developing </span>
                         <span className='lg:text-8xl md:text-5xl text-3xl font-bold frontbacksmall relative'>Frontend</span>
@@ -35,6 +39,7 @@ function Projects() {
                     }
                 </ul>
             </div>
+        </div>
         </>
     )
 }
