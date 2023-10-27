@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useSelector } from 'react-redux';
 
 function Projects() {
@@ -8,41 +8,56 @@ function Projects() {
     const imgArray = [
         {
             "img" : "teampuri",
-            "title" : "TEAM PROJECTS"
+            "title" : "TEAM PROJECTS",
+            "type" : "team"
+        },
+        {
+            "img" : "festival",
+            "title" : "PERSONAL PROJECTS",
+            "type" : "personal"
+        },
+        {
+            "img" : "quiz",
+            "title" : "PERSONAL PROJECTS",
+            "type" : "personal"
         },
         {
             "img" : "police",
-            "title" : "CLONE CODINGS"
+            "title" : "CLONE CODINGS",
+            "type" : "clone"
         },
         {
             "img" : "seoul",
-            "title" : "CLONE CODINGS"
+            "title" : "CLONE CODINGS",
+            "type" : "clone"
         },
         {
             "img" : "burgerking",
-            "title" : "CLONE CODINGS"
+            "title" : "CLONE CODINGS",
+            "type" : "clone"
         },
         {
             "img" : "gongcha",
-            "title" : "CLONE CODINGS"
+            "title" : "CLONE CODINGS",
+            "type" : "clone"
         },
         {
             "img" : "subway",
-            "title" : "CLONE CODINGS"
-        },
-        {
-            "img" : "임시이미지1",
-            "title" : "TEAM PROJECTS"
-        },
-        {
-            "img" : "임시이미지2",
-            "title" : "TEAM PROJECTS"
-        },
-        {
-            "img" : "임시이미지3",
-            "title" : "CLONE CODINGS"
+            "title" : "CLONE CODINGS",
+            "type" : "clone"
         }
     ];
+
+    const [filter, setFilter] = useState('');
+    const filterData = imgArray.filter((item) => {
+        if (!filter) return true;
+        return item.type === filter;
+    });
+
+    const [active, setActive] = useState('');
+    const activeFilter = (filter) => {
+        setActive(filter);
+    }
 
     return (
         <>
@@ -55,22 +70,23 @@ function Projects() {
                         <p className='lg:text-8xl md:text-5xl text-3xl'><span className='playfair italic'>P</span>rojects</p>
                     </div>
                 </div>
-                <div className='flex justify-center gap-x-2 my-20'>
-                    <div className='lg:text-2xl md:text-lg text-sm cursor-pointer bg-[#D83546] p-3 text-white font-bold'>SHOW ALL</div>
-                    <div className='lg:text-2xl md:text-lg text-sm cursor-pointer bg-white p-3 text-[#D83546] font-bold border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white'>TEAM PROJECTS</div>
-                    <div className='lg:text-2xl md:text-lg text-sm cursor-pointer bg-white p-3 text-[#D83546] font-bold border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white'>CLONE CODINGS</div>
+                <div className='lg:flex md:flex lg:justify-center md:justify-center gap-x-2 my-20 px-[2%]'>
+                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === '' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter(""); activeFilter("");}}>SHOW ALL</div>
+                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'personal' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter("personal"); activeFilter("personal");}}>PERSONAL PROJECTS</div>
+                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'team' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter("team"); activeFilter("team");}}>TEAM PROJECTS</div>
+                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer bg-white p-3 text-[#D83546] font-bold border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'clone' ? 'activeColor' : ''}`} onClick={() => {setFilter("clone"); activeFilter("clone");}}>CLONE CODINGS</div>
                 </div>
-                <ul className='flex flex-wrap mx-auto justify-between px-[2%] gap-y-2 pb-40'>
+                <ul className='flex flex-wrap mx-auto lg:justify-start lg:gap-x-1 justify-between px-[2%] gap-y-2 pb-40'>
                     {
-                        imgArray.map((e, i) => {
+                        filterData.map((e, i) => {
                             return (
                                 <>
                                     <li key={i} className='project relative lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer group'>
-                                        <img className='w-full' src={i < 6 ? `./../../img/${e.img}.png` : `./../../img/${e.img}.jpg`} alt={i} />
-                                        <p key={i} className='hidden group-hover:block group-hover:absolute group-hover:z-10 group-hover:top-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-y-1/2 lg:group-hover:text-xl group-hover:font-bold lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer'>{e.title}</p>
+                                        <img className='w-full' src={`./../../img/${e.img}.png`} alt={i} />
+                                        <p key={i} className='hidden group-hover:block group-hover:absolute group-hover:z-10 group-hover:top-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-y-1/2 lg:group-hover:text-xl group-hover:font-bold lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer text-white text-center'>{e.title}</p>
                                     </li>
                                 </>
-                            )
+                            );
                         })
                     }
                 </ul>
