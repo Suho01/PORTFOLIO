@@ -1,6 +1,52 @@
 import React from 'react'
 
 function Skills() {
+
+    const SkillArray = [
+        {
+            "title" : "LanguageArray",
+            "desc" : {
+                "Javascript" : "함수를 사용할 줄 압니다.",
+                "Typescript" : "타입을 선언할 줄 압니다.",
+                "NextJS" : "사용해봤습니다."
+            }
+        },
+        {
+            "title" : "Framework / Library",
+            "desc" : {
+                "React" : "상태 관리 및 redux 활용 가능",
+                "NodeJS" : "데이터베이스 연동 가능"
+            }
+        },
+        {
+            "title" : "MarkUp",
+            "desc" : {
+                "HTML" : "시맨틱 마크업과 브라우저 렌더링 프로세스에 대해서 잘 알고 있습니다.",
+                "CSS" : "완존 잘해요",
+                "SCSS" : "완벽하게 쓸 줄 알아요 제 별명이 scss성애자",
+                "TailwindCSS" : "다크모드, 다국어, 모바일 반응형 구현 삽가능",
+                "Styled Components" : "아 쌉 가능"
+            }   
+        },
+        {
+            "title" : "Database",
+            "desc" : {
+                "MongoDB" : "몽골에서 온 몽고디비인가?",
+                "MySql" : "학교에서 배웟는데 테이블 잘 만듦"
+            }
+        },
+        {
+            "title" : "Tool",
+            "desc" : {
+                "Git" : "이거 못하면 개발자 아님..",
+                "Github" : "이거 모르면 취업 못 함..",
+                "Figma" : "피그마 선생님 조아요",
+                "Adobe Photoshop" : "디자인 마스터",
+                "Adobe Illustrator" : "10세에 GTQ 마스터 하다 . . ."
+            }
+        }
+    ]
+
     return (
         <>
         <div className='dark:bg-[#272929]'>
@@ -13,41 +59,28 @@ function Skills() {
                     </div>
                 </div>
                 <div className='flex lg:justify-between items-center'>
-                    <ul className='lg:basis-1/4 font-bold lg:text-2xl lg:leading-loose'>
-                        <li>Language</li>
-                        <li>Framework / Library</li>
-                        <li>MarkUp</li>
-                        <li>Database</li>
-                        <li>Tool</li>
-                    </ul>
-                    <ul className='lg:basis-3/4 lg:text-lg lg:leading-loose'>
-                        <li className='flex'>
-                            <p>Javascript</p>
-                            <p>Typescript</p>
-                            <p>NextJS</p>
-                        </li>
-                        <li className='flex'>
-                            <p>React</p>
-                            <p>NodeJS</p>
-                        </li>
-                        <li className='flex'>
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>SCSS</p>
-                            <p>TailwindCSS</p>
-                            <p>Styled Components</p>
-                        </li>
-                        <li className='flex'>
-                            <p>MongoDB</p>
-                            <p>MySql</p>
-                        </li>
-                        <li className='flex'>
-                            <p>Git</p>
-                            <p>Github</p>
-                            <p>Figma</p>
-                            <p>Photoshop</p>
-                            <p>Illustrator</p>
-                        </li>
+                    <ul className='font-bold lg:text-2xl lg:leading-loose'>
+                        {
+                            SkillArray.map((e, i) => {
+                                return (
+                                    <>                                    
+                                    <li key={i}>{e.title}</li>
+                                    <li className='lg:text-xl lg:leading-loose font-normal flex pb-10'>
+                                        {
+                                            Object.entries(e.desc).map(([key, value], index) => {
+                                                return (
+                                                    <li key={index} className='pr-10 group'>
+                                                        <span title='value' className='group-hover:bg-slate-300 cursor-pointer'>{key}</span>
+                                                        <span className='hidden group-hover:block absolute'>{value}</span>
+                                                    </li>
+                                                )
+                                            })
+                                        }
+                                    </li>
+                                    </>
+                                )
+                            })
+                        }
                     </ul>
                 </div>
             </div>
