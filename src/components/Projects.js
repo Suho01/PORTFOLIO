@@ -9,12 +9,15 @@ function Projects() {
         {
             "img" : "teampuri",
             "title" : "TEAM PROJECTS",
-            "type" : "team"
+            "type" : "team",
+            "use" : "React, TailwindCSS, Firebase, JavaScript, Redux, Node.js",
+            "story" : "메인 페이지, 로그인 및 회원가입 기능 개발, 전체 디자인, 네이버 지도 API를 활용한 POI 탐색, 업종/기간/지역별 필터링 기능 구현, tailwindCSS 이용한 반응형/적응형 구현"
         },
         {
             "img" : "festival",
             "title" : "PERSONAL PROJECTS",
-            "type" : "personal"
+            "type" : "personal",
+            "use" : ""
         },
         {
             "img" : "quiz",
@@ -83,7 +86,7 @@ function Projects() {
                                 <>
                                     <li key={i} className='project relative lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer group'>
                                         <img className='w-full' src={`./../../img/${e.img}.png`} alt={i} />
-                                        <p key={i} className='hidden group-hover:block group-hover:absolute group-hover:z-10 group-hover:top-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-y-1/2 lg:group-hover:text-xl group-hover:font-bold lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer text-white text-center'>{e.title}</p>
+                                        <p key={i} className='hidden group-hover:block group-hover:absolute group-hover:z-10 group-hover:top-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-y-1/2 lg:group-hover:text-xl group-hover:font-bold lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer text-white text-center'>{e.title}<span className='text-xs'>{e.use}{e.story}</span></p>
                                     </li>
                                 </>
                             );

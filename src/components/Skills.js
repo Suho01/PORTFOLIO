@@ -52,26 +52,26 @@ function Skills() {
         <div className='dark:bg-[#272929]'>
             <div className='lg:max-w-7xl lg:h-screen mx-auto relative lg:pt-0 md:pt-0 pt-20 dark:text-white'>
                 <div className='flex justify-center'>
-                    <div className='text-center lg:tracking-[-0.5em] md:tracking-[-0.2em] tracking-tighter leading-none lg:my-24'>
+                    <div className='text-center lg:tracking-[-0.5em] md:tracking-[-0.2em] tracking-tighter leading-none lg:my-24 mb-20'>
                         <span className='lg:text-8xl md:text-5xl text-3xl'>Developing </span>
                         <span className='lg:text-8xl md:text-5xl text-3xl font-bold frontbacksmall relative'>Frontend</span>
                         <p className='lg:text-8xl md:text-5xl text-3xl'><span className='playfair italic'>S</span>kills</p>
                     </div>
                 </div>
                 <div className='flex lg:justify-between items-center'>
-                    <ul className='font-bold lg:text-2xl lg:leading-loose'>
+                    <ul className='font-bold lg:text-2xl md:text-xl text-lg lg:leading-loose px-[2%]'>
                         {
                             SkillArray.map((e, i) => {
                                 return (
                                     <>                                    
                                     <li key={i}>{e.title}</li>
-                                    <li className='lg:text-xl lg:leading-loose font-normal flex pb-10'>
+                                    <li className='lg:text-xl lg:leading-loose font-normal flex pb-10 md:text-lg text-base flex-wrap'>
                                         {
                                             Object.entries(e.desc).map(([key, value], index) => {
                                                 return (
                                                     <li key={index} className='pr-10 group'>
-                                                        <span title='value' className='group-hover:bg-slate-300 cursor-pointer'>{key}</span>
-                                                        <span className='hidden group-hover:block absolute'>{value}</span>
+                                                        <span title='value' className='cursor-pointer'>{key}</span>
+                                                        <span className='hidden group-hover:block absolute bg-[#ec4f5f] text-white'>{value}</span>
                                                     </li>
                                                 )
                                             })
