@@ -10,44 +10,65 @@ function Projects() {
             "img" : "teampuri",
             "title" : "TEAM PROJECTS",
             "type" : "team",
-            "use" : "React, TailwindCSS, Firebase, JavaScript, Redux, Node.js",
-            "story" : "메인 페이지, 로그인 및 회원가입 기능 개발, 전체 디자인, 네이버 지도 API를 활용한 POI 탐색, 업종/기간/지역별 필터링 기능 구현, tailwindCSS 이용한 반응형/적응형 구현"
+            "use" : "·React　·TailwindCSS　·Firebase　·JavaScript　·Redux　·Node.js",
+            "story" : "메인 페이지, 로그인 및 회원가입 기능 개발, 전체 디자인, 네이버 지도 API를 활용한 POI 탐색, 업종/기간/지역별 필터링 기능 구현, tailwindCSS 이용한 반응형 구현",
+            "link" : "https://team-puri.vercel.app/"
         },
         {
             "img" : "festival",
             "title" : "PERSONAL PROJECTS",
             "type" : "personal",
-            "use" : ""
+            "use" : "·React　·Styled Components　·JavaScript　·API공공데이터",
+            "story" : "filter함수를 이용해 각 구군마다 컨텐츠가 다르게 나타나는 기능 구현, 반응형 구현",
+            "link" : "https://festival-mu.vercel.app/"
         },
         {
             "img" : "quiz",
             "title" : "PERSONAL PROJECTS",
-            "type" : "personal"
+            "type" : "personal",
+            "use" : "·React　·TailwindCSS　·JavaScript",
+            "story" : "랜덤함수로 문제 순서 및 문제 유형 구현, 오답노트 구현, tailwindCSS 이용한 반응형 구현",
+            "link" : "https://quiz-rust-one.vercel.app/"
         },
         {
             "img" : "police",
             "title" : "CLONE CODINGS",
-            "type" : "clone"
+            "type" : "clone",
+            "use" : "·HTML　·SCSS　·JavaScript",
+            "story" : "",
+            "link" : "https://suho01.github.io/police/"
         },
         {
             "img" : "seoul",
             "title" : "CLONE CODINGS",
-            "type" : "clone"
+            "type" : "clone",
+            "use" : "·HTML　·SCSS　·JavaScript",
+            "story" : "",
+            "link" : "https://suho01.github.io/seoul/"
         },
         {
             "img" : "burgerking",
             "title" : "CLONE CODINGS",
-            "type" : "clone"
+            "type" : "clone",
+            "use" : "·HTML　·SCSS　·JavaScript",
+            "story" : "",
+            "link" : "https://suho01.github.io/burgerking/"
         },
         {
             "img" : "gongcha",
             "title" : "CLONE CODINGS",
-            "type" : "clone"
+            "type" : "clone",
+            "use" : "·HTML　·CSS　·JavaScript",
+            "story" : "",
+            "link" : "https://suho01.github.io/gongcha/"
         },
         {
             "img" : "subway",
             "title" : "CLONE CODINGS",
-            "type" : "clone"
+            "type" : "clone",
+            "use" : "·HTML　·CSS　·JavaScript",
+            "story" : "",
+            "link" : "https://suho01.github.io/subway/"
         }
     ];
 
@@ -85,8 +106,10 @@ function Projects() {
                             return (
                                 <>
                                     <li key={i} className='project relative lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer group'>
-                                        <img className='w-full' src={`./../../img/${e.img}.png`} alt={i} />
-                                        <p key={i} className='hidden group-hover:block group-hover:absolute group-hover:z-10 group-hover:top-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-y-1/2 lg:group-hover:text-xl group-hover:font-bold lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer text-white text-center'>{e.title}<span className='text-xs'>{e.use}{e.story}</span></p>
+                                        <a href={e.link} target='_blank'>
+                                            <img className='w-full' src={`./../../img/${e.img}.png`} alt={i} />
+                                            <p key={i} className='hidden group-hover:block group-hover:absolute group-hover:z-10 group-hover:top-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-y-1/2 lg:group-hover:text-xl group-hover:font-bold lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer text-white text-center'>{e.title}<p className='text-xs'>{e.use}</p><p className='text-xs'>{e.story}</p></p>
+                                        </a>
                                     </li>
                                 </>
                             );

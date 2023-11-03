@@ -6,6 +6,7 @@ import Skills from './components/Skills';
 import { Provider, useDispatch, useSelector } from 'react-redux';
 import store, { toggleTheme } from "./store";
 import { useEffect } from 'react';
+import Footer from './components/Footer';
 
 function App() {
     
@@ -17,6 +18,7 @@ function App() {
                 <Aboutme />
                 <Projects />
                 <Skills />
+                <Footer />
             </Provider>
         </>
     );
