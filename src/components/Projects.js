@@ -32,40 +32,40 @@ function Projects() {
         },
         {
             "img" : "police",
-            "title" : "CLONE CODINGS",
-            "type" : "clone",
+            "title" : "WEB APP",
+            "type" : "webapp",
             "use" : "·HTML　·SCSS　·JavaScript",
             "story" : "",
             "link" : "https://suho01.github.io/police/"
         },
         {
             "img" : "seoul",
-            "title" : "CLONE CODINGS",
-            "type" : "clone",
+            "title" : "WEB APP",
+            "type" : "webapp",
             "use" : "·HTML　·SCSS　·JavaScript",
             "story" : "",
             "link" : "https://suho01.github.io/seoul/"
         },
         {
             "img" : "burgerking",
-            "title" : "CLONE CODINGS",
-            "type" : "clone",
+            "title" : "WEB APP",
+            "type" : "webapp",
             "use" : "·HTML　·SCSS　·JavaScript",
             "story" : "",
             "link" : "https://suho01.github.io/burgerking/"
         },
         {
             "img" : "gongcha",
-            "title" : "CLONE CODINGS",
-            "type" : "clone",
+            "title" : "WEB APP",
+            "type" : "webapp",
             "use" : "·HTML　·CSS　·JavaScript",
             "story" : "",
             "link" : "https://suho01.github.io/gongcha/"
         },
         {
             "img" : "subway",
-            "title" : "CLONE CODINGS",
-            "type" : "clone",
+            "title" : "WEB APP",
+            "type" : "webapp",
             "use" : "·HTML　·CSS　·JavaScript",
             "story" : "",
             "link" : "https://suho01.github.io/subway/"
@@ -98,7 +98,7 @@ function Projects() {
                     <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === '' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter(""); activeFilter("");}}>SHOW ALL</div>
                     <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'personal' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter("personal"); activeFilter("personal");}}>PERSONAL PROJECTS</div>
                     <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'team' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter("team"); activeFilter("team");}}>TEAM PROJECTS</div>
-                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer bg-white p-3 text-[#D83546] font-bold border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'clone' ? 'activeColor' : ''}`} onClick={() => {setFilter("clone"); activeFilter("clone");}}>CLONE CODINGS</div>
+                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer bg-white p-3 text-[#D83546] font-bold border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'webapp' ? 'activeColor' : ''}`} onClick={() => {setFilter("webapp"); activeFilter("webapp");}}>WEB APP</div>
                 </div>
                 <ul className='flex flex-wrap mx-auto lg:justify-start lg:gap-x-1 justify-between px-[2%] gap-y-2 pb-40'>
                     {

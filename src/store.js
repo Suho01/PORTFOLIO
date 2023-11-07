@@ -1,6 +1,6 @@
 import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-let dark = createSlice({
+let dark = createSlice ({
     name : "theme",
     initialState : localStorage.getItem('theme') || 'light',
     reducers : {
@@ -10,8 +10,8 @@ let dark = createSlice({
 
 export const { toggleTheme } = dark.actions;
 
-export default configureStore({
+export default configureStore ({
     reducer : {
         dark : dark.reducer
     }
-})
+});
