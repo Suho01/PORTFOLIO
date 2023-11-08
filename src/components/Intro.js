@@ -1,13 +1,8 @@
-import { faCircle, faCircleHalfStroke } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { toggleTheme } from '../store';
+
 
 function Intro() {
-    const theme = useSelector(state => state.dark);
-    const dispatch = useDispatch();
-    const darkMode = useSelector(state => state.dark);
     return (
         <>
         <div className='dark:bg-[#272929]'>            
@@ -18,10 +13,9 @@ function Intro() {
                     <p className='lg:text-[180px] md:text-8xl text-6xl font-bold frontback relative'>Frontend</p>                    
                     <p className='lg:text-[180px] md:text-8xl text-6xl'><span className='playfair italic'>E</span>xperiences</p>
                     <p className='lg:text-xl tracking-normal pt-10'>&copy; LeeJiyeon</p>
-                    <FontAwesomeIcon className='cursor-pointer' onClick={() => dispatch(toggleTheme())} icon={theme === 'light' ? faCircle : faCircleHalfStroke} size='2x' />
                 </div>
-        </div>
             </div>
+        </div>
         </>
     )
 }

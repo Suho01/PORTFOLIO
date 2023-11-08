@@ -7,6 +7,7 @@ import { Provider, useDispatch, useSelector } from 'react-redux';
 import store, { toggleTheme } from "./store";
 import { useEffect } from 'react';
 import Footer from './components/Footer';
+import Nav from './components/Nav';
 
 function App() {
     
@@ -14,6 +15,7 @@ function App() {
         <>
             <Provider store={store}>
                 <Inner />
+                <Nav />
                 <Intro />
                 <Aboutme />
                 <Projects />
