@@ -1,4 +1,5 @@
 import { faGithub, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faComments, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React from 'react'
 import { NavLink } from 'react-router-dom'
@@ -14,7 +15,9 @@ function Footer() {
             <div className='lg:max-w-7xl mx-auto'>
                 <ul className='flex justify-center'>
                     <li className='pr-10'><NavLink to='https://github.com/Suho01'><FontAwesomeIcon icon={faGithub} className='text-white hover:text-black duration-500 lg:text-9xl md:text-8xl text-7xl' /></NavLink></li>
-                    <li><NavLink to='https://www.youtube.com/@suhochofree/featured'><FontAwesomeIcon icon={faYoutube} color='white' className='text-white hover:text-red-600 duration-500 lg:text-9xl md:text-8xl text-7xl' /></NavLink></li>
+                    <li className='pr-10'><NavLink to='https://www.youtube.com/@suhochofree/featured'><FontAwesomeIcon icon={faYoutube} color='white' className='text-white hover:text-red-600 duration-500 lg:text-9xl md:text-8xl text-7xl' /></NavLink></li>
+                    <li className='pr-10'><NavLink to='https://open.kakao.com/me/o2asis'><FontAwesomeIcon icon={faComments} color='white' className='text-white hover:text-yellow-500 duration-500 lg:text-9xl md:text-8xl text-7xl' /></NavLink></li>
+                    <li><NavLink to="mailto:suhoprimavera@gmail.com"><FontAwesomeIcon icon={faEnvelopeOpen} color='white' className='text-white hover:text-slate-500 duration-500 lg:text-9xl md:text-8xl text-7xl' /></NavLink></li>
                 </ul>
                 <p className='text-white text-center py-20'>Copyright 2023. 이지연 all rights reserved.</p>
             </div>
