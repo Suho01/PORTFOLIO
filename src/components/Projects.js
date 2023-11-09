@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
-import { useSelector } from 'react-redux';
 
 function Projects() {
-
-    const theme = useSelector(state => state.dark);
 
     const imgArray = [
         {

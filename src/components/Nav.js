@@ -26,7 +26,7 @@ function Nav() {
                     <li><FontAwesomeIcon className={`cursor-pointer text-4xl ${theme === 'light' ? 'text-[#D83546]' : 'text-white'}`} onClick={() => dispatch(toggleTheme())} icon={theme === 'light' ? faToggleOff : faToggleOn} /></li>
                 </ul>
             </div>
-            <div className="lg:hidden block fixed">
+            <div className="lg:hidden hidden fixed bg-slate-500 right-0 top-0">
                 <ul>
                     {
                         NavArray.map((e, i) => {
