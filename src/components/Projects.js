@@ -100,12 +100,12 @@ function Projects() {
                     <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'team' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter("team"); activeFilter("team");}}>TEAM PROJECTS</div>
                     <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer bg-white p-3 text-[#D83546] font-bold border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'webapp' ? 'activeColor' : ''}`} onClick={() => {setFilter("webapp"); activeFilter("webapp");}}>WEB APP</div>
                 </div>
-                <ul className='flex flex-wrap mx-auto lg:justify-start lg:gap-x-1 justify-between px-[2%] gap-y-2 pb-40'>
+                <ul className='flex flex-wrap mx-auto lg:justify-start lg:gap-x-5 justify-between px-[2%] gap-y-5 pb-40'>
                     {
                         filterData.map((e, i) => {
                             return (
                                 <>
-                                    <li key={i} className='project relative lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer group'>
+                                    <li key={i} className='project relative lg:basis-[32%] md:basis-[49%] basis-full cursor-pointer group border shadow-md'>
                                         <a href={e.link} target='_blank'>
                                             <img className='w-full' src={`./../../img/${e.img}.png`} alt={i} />
                                             <p key={i} className='hidden group-hover:block group-hover:absolute group-hover:z-10 group-hover:top-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-y-1/2 lg:group-hover:text-xl group-hover:font-bold lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer text-white text-center'>{e.title}<p className='text-xs'>{e.use}</p><p className='text-xs'>{e.story}</p></p>

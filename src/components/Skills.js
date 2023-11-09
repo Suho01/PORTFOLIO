@@ -1,4 +1,5 @@
 import React from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 
 function Skills() {
 
@@ -47,10 +48,12 @@ function Skills() {
         }
     ]
 
+    const theme = useSelector(state => state.dark);
+
     return (
         <>
         <div className='dark:bg-[#272929]'>
-            <div className='lg:max-w-7xl mx-auto relative lg:pt-0 md:pt-0 pt-20 dark:text-white'>
+            <div className='lg:max-w-7xl mx-auto relative lg:pt-0 md:pt-0 pt-20 dark:text-white mb-20'>
                 <div className='flex justify-center'>
                     <div className='text-center lg:tracking-[-0.5em] md:tracking-[-0.2em] tracking-tighter leading-none lg:my-24 mb-20'>
                         <span className='lg:text-8xl md:text-5xl text-3xl'>Developing </span>
@@ -65,11 +68,11 @@ function Skills() {
                                 return (
                                     <>                                    
                                     <li key={i}>{e.title}</li>
-                                    <li className='lg:text-xl lg:leading-loose font-normal flex pb-10 md:text-lg text-base flex-wrap'>
+                                    <li className='lg:text-xl lg:leading-loose font-normal flex pb-5 md:text-lg text-base flex-wrap'>
                                         {
                                             Object.entries(e.desc).map(([key, value], index) => {
                                                 return (
-                                                    <li key={index} className='pr-10 group'>
+                                                    <li key={index} className={`pr-10 group text-base ${theme === 'light' ? 'text-gray-600' : 'text-gray-300'}`}>
                                                         <span title='value' className='cursor-pointer'>{key}</span>
                                                         <span className='hidden group-hover:block absolute bg-[#ec4f5f] text-white'>{value}</span>
                                                     </li>

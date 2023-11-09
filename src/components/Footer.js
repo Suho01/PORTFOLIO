@@ -5,21 +5,54 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 function Footer() {
+
+    const icon = [
+        {
+            "name" : faGithub,
+            "link" : "https://github.com/Suho01",
+            "color" : "black"
+        },
+        {
+            "name" : faYoutube,
+            "link" : "https://www.youtube.com/@suhochofree/featured",
+            "color" : "red-600"
+        },
+        {
+            "name" : faComments,
+            "link" : "https://github.com/Suho01",
+            "color" : "yellow-500"
+        },
+        {
+            "name" : faEnvelopeOpen,
+            "link" : "mailto:suhoprimavera@gmail.com",
+            "color" : "slate-500"
+        },
+    ];
+
     return (
-        <div className='bg-[#92313b] w-full h-full text-white pt-20'>
-            <div className='text-center lg:tracking-[-0.5em] md:tracking-[-0.2em] tracking-tighter leading-none lg:mb-24 md:mb-20 mb-10'>
-            <span className='lg:text-8xl md:text-5xl text-3xl'>Developing </span>
-            <span className='lg:text-8xl md:text-5xl text-3xl font-bold relative'>Frontend</span>
-            <p className='lg:text-8xl md:text-5xl text-3xl'><span className='playfair italic'>C</span>onnect Me</p>
+        <div className='bg-[#92313b] w-full text-white pt-20'>
+            <div className='text-center lg:tracking-[-0.2em] tracking-tighter leading-none mb-10'>
+            <span className='lg:text-5xl text-3xl'>Developing </span>
+            <span className='lg:text-5xl text-3xl font-bold relative'>Frontend</span>
+            <p className='lg:text-5xl text-3xl'><span className='playfair italic'>C</span>onnect Me</p>
         </div>
             <div className='lg:max-w-7xl mx-auto'>
-                <ul className='flex justify-around px-[2%]'>
-                    <li><NavLink to='https://github.com/Suho01'><FontAwesomeIcon icon={faGithub} className='text-white hover:text-black duration-500 lg:text-9xl md:text-8xl text-7xl' /></NavLink></li>
-                    <li><NavLink to='https://www.youtube.com/@suhochofree/featured'><FontAwesomeIcon icon={faYoutube} color='white' className='text-white hover:text-red-600 duration-500 lg:text-9xl md:text-8xl text-7xl' /></NavLink></li>
-                    <li><NavLink to='https://open.kakao.com/me/o2asis'><FontAwesomeIcon icon={faComments} color='white' className='text-white hover:text-yellow-500 duration-500 lg:text-9xl md:text-8xl text-7xl' /></NavLink></li>
-                    <li><NavLink to="mailto:suhoprimavera@gmail.com"><FontAwesomeIcon icon={faEnvelopeOpen} color='white' className='text-white hover:text-slate-500 duration-500 lg:text-9xl md:text-8xl text-7xl' /></NavLink></li>
+                <ul className='flex justify-around px-[2%] lg:px-[30%] md:px-[20%]'>
+                    {
+                        icon.map((e, i) => {
+                            return (
+                                <li key={i}><NavLink to={e.link}><FontAwesomeIcon icon={e.name} className={`text-white hover:text-${e.color} duration-500 lg:text-7xl md:text-6xl text-5xl`} /></NavLink></li>                                
+                            )
+                        })
+                    }
                 </ul>
-                <p className='text-lg text-white text-center py-20 tracking-tighter px-5'>Copyright 2023. 이지연 all rights reserved.<br /><br /><span className='lg:text-sm text-xs'>본 사이트는 상업적 목적이 아닌 이지연 개인 포트폴리오 사이트로 제작되었습니다.<br />일부 이미지 및 폰트 등은 그 출처가 따로 있음을 밝힙니다. <br /><br />해당 사이트는 1920*1080 해상도에 최적화 되었습니다.<br /><br />마지막 수정일 : 2023.11.09</span></p>
+                <ul className='text-lg text-white text-center py-10 tracking-tighter px-5'>
+                    <li className='pb-2'>Copyright 2023. 이지연 all rights reserved.</li>
+                    <li className='lg:text-sm text-xs pt-3 pb-1'>본 사이트는 상업적 목적이 아닌 이지연 개인 포트폴리오 사이트로 제작되었습니다.</li>
+                    <li className='lg:text-sm text-xs pb-3'>일부 이미지 및 폰트 등은 그 출처가 따로 있음을 밝힙니다.</li>
+                    <li className='lg:text-sm text-xs py-3'>해당 사이트는 1920*1080 해상도에 최적화 되었습니다.</li>
+                    <li className='lg:text-sm text-xs pt-3'>마지막 수정일 : 2023.11.09</li>
+                </ul>
             </div>
         </div>
     )
