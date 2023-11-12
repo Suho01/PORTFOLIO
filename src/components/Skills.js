@@ -53,7 +53,7 @@ function Skills() {
     return (
         <>
         <div className='dark:bg-[#272929]'>
-            <div className='lg:max-w-7xl mx-auto relative lg:pt-0 md:pt-0 pt-20 dark:text-white mb-20'>
+            <div className='lg:max-w-7xl mx-auto relative lg:pt-0 md:pt-0 pt-20 dark:text-white pb-20'>
                 <div className='flex justify-center'>
                     <div className='text-center lg:tracking-[-0.5em] md:tracking-[-0.2em] tracking-tighter leading-none lg:my-24 mb-20'>
                         <span className='lg:text-8xl md:text-5xl text-3xl'>Developing </span>

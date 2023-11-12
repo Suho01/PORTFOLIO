@@ -8,7 +8,7 @@ function Aboutme() {
     return (
         <>
         <div className='dark:bg-[#272929]'>
-            <div className='lg:max-w-7xl lg:h-screen mx-auto relative dark:text-white'>
+            <div className='lg:max-w-7xl mx-auto relative dark:text-white'>
                 <div className='flex justify-center'>
                     <div className='text-center lg:tracking-[-0.5em] md:tracking-[-0.2em] tracking-tighter leading-none lg:my-24'>
                         <span className='lg:text-8xl md:text-5xl text-3xl'>Developing </span>
@@ -17,9 +17,9 @@ function Aboutme() {
                     </div>
                 </div>
                 <div className='lg:flex px-[2%]'>
-                    <img src="https://via.placeholder.com/500" alt="임시이미지" className='lg:block hidden lg:order-2 lg:max-w-full lg:h-full' />
-                    <img src="https://via.placeholder.com/300" alt="임시이미지" className='md:mx-auto md:my-10 md:block lg:hidden hidden' />
-                    <img src="https://via.placeholder.com/200" alt="임시이미지" className='mx-auto my-10 block lg:hidden md:hidden' />
+                    <img src="./../../img/leejiyeon.png" alt="pc" className='lg:block hidden lg:order-2 lg:max-w-full lg:h-full' />
+                    <img src="./../../img/leejiyeon.png" alt="tablet" className='md:mx-auto md:my-10 md:block lg:hidden hidden' />
+                    <img src="./../../img/leejiyeon2.png" alt="mobile" className='mx-auto my-10 block lg:hidden md:hidden' />
                     <ul className={`text-sm ${theme === 'light' ? 'text-gray-600' : 'text-gray-300'} lg:tracking-tighter lg:order-1 lg:text-left
                     text-center md:mb-20 px-[2%] leading-relaxed`}>
                         <li className={`font-bold text-xl relative after:w-4 after:h-1 after:bg-[#D83546] after:absolute after:left-0 after:-top-1 inline-block ${theme === 'light' ? 'text-black' : 'text-white'} pb-2`}>Profile</li>

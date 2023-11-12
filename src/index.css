@@ -29,8 +29,8 @@ a {text-decoration: none; color: #000;}
     .frontback::after {
         content: url("./../public/img/after.png");
         position: absolute;
-        top: -50px;
-        left: 40px;
+        top: -60px;
+        left: -50px;
         z-index: -9;
     }
     
@@ -98,4 +98,22 @@ a {text-decoration: none; color: #000;}
 .activeColor {
     background-color: #d83546;
     color: #fff;
+}
+
+.navarray:hover {
+    font-weight: bold;
+}
+.navarray::after {
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 15px;
+    background-color: rgb(255, 144, 155);
+    z-index: -1;
+}
+.navarray:hover::after {
+    width: 100%;
 }

@@ -6,7 +6,7 @@ import { faBurger, faToggleOff, faToggleOn, faXmark } from '@fortawesome/free-so
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function Nav() {
-    const NavArray = ["<Work />", "<Projects />", "<Skills />", "<Contact />"];
+    const NavArray = ["<About me />", "<Projects />", "<Skills />", "<Contact />"];
 
     const theme = useSelector(state => state.dark);
     const dispatch = useDispatch();
@@ -18,15 +18,15 @@ function Nav() {
     }
 
     return (
-        <div className='lg:max-w-7xl md:max-w-3xl sm:max-w-sm mx-auto'>
+        <div className='lg:max-w-7xl md:max-w-3xl sm:max-w-sm'>
             {/* pc nav start */}
             <div className={`fixed left-1/2 -translate-x-1/2 ${theme === 'light' ? 'bg-white' : 'bg-[#272929]'} lg:w-full z-[999] shadow-md lg:block hidden`}>
-                <ul className='lg:max-w-7xl mx-auto flex justify-between py-12 items-center'>
+                <ul className='lg:max-w-7xl mx-auto flex justify-between py-6 items-center'>
                     <li><NavLink className={`${theme === 'light' ? 'text-black' : 'text-white'} font-bold text-2xl`}><span className={`text-base ${theme === 'light' ? 'text-gray-600' : 'text-gray-400'}`}>Frontend Developer</span><br />Jiyeon's Portfolio</NavLink></li>
                     {
                         NavArray.map((e, i) => {
                             return (
-                                <li key={i}><NavLink className={`${theme === 'light' ? 'text-black' : 'text-white'}`}>{e}</NavLink></li>
+                                <li key={i} className='hover:font-bold relative navarray text-xl text-center'><NavLink className={`${theme === 'light' ? 'text-black' : 'text-white'}`}>{e}</NavLink></li>
                             );
                         })
                     }
@@ -45,7 +45,7 @@ function Nav() {
                     }
                 </li>
             </ul>
-            <div className={`lg:hidden block fixed bg-[#D83546]/90 right-0 top-0 z-[59] p-20 pt-40 h-full duration-500 ${hamburger ? 'right-0' : '-right-72'}`}>
+            <div className={`lg:hidden block fixed bg-[#D83546]/90 right-0 top-0 z-[59] p-20 pt-40 h-full duration-500 ${hamburger ? 'right-0' : 'right-[-320px]'}`}>
                 <ul className='text-white'>
                     {
                         NavArray.map((e, i) => {
