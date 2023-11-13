@@ -199,6 +199,9 @@ a {text-decoration: none; color: #000;}
     transition: all 0.2s ease;
     transform-origin: 50% 50%;
 }
+.custom_cursor_hover .custom-cursor-icon {
+    transform: scale(1.5);
+}
    
 .custom-cursor.custom_cursor_visible {
     opacity: 1;
