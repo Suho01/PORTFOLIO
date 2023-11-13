@@ -52,13 +52,14 @@ function Skills() {
 
     return (
         <>
-        <div className='dark:bg-[#272929]'>
+        <div className='dark:bg-[#272929] bg-white'>
             <div className='lg:max-w-7xl mx-auto relative lg:pt-0 md:pt-0 pt-20 dark:text-white pb-20'>
                 <div className='flex justify-center'>
                     <div className='text-center lg:tracking-[-0.5em] md:tracking-[-0.2em] tracking-tighter leading-none lg:my-24 mb-20'>
-                        <span className='lg:text-8xl md:text-5xl text-3xl'>Developing </span>
-                        <span className='lg:text-8xl md:text-5xl text-3xl font-bold frontbacksmall relative'>Frontend</span>
-                        <p className='lg:text-8xl md:text-5xl text-3xl'><span className='playfair italic'>S</span>kills</p>
+                        <span className='lg:text-8xl md:text-5xl text-3xl relative z-20'>Developing </span>
+                        <span className='lg:text-8xl md:text-5xl text-3xl font-bold frontbacksmall relative z-10 dark:hidden'>Frontend</span>
+                        <span className='lg:text-8xl md:text-5xl text-3xl font-bold frontbacksmalldark relative z-10 hidden dark:inline-block'>Frontend</span>
+                        <p className='lg:text-8xl md:text-5xl text-3xl relative z-10'><span className='playfair italic'>S</span>kills</p>
                     </div>
                 </div>
                 <div className='flex lg:justify-between items-center'>

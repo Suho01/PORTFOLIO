@@ -9,7 +9,6 @@ import { useEffect } from 'react';
 import Footer from './components/Footer';
 import Nav from './components/Nav';
 import GoTop from './components/GoTop';
-import { Route, Routes } from 'react-router-dom';
 
 function App() {
     
@@ -24,13 +23,6 @@ function App() {
                 <Skills />
                 <Footer />
                 <GoTop />
-                <Routes>
-                    <Route path='/' element={<Intro />}></Route>
-                    <Route path='/aboutme' element={<Aboutme />}></Route>
-                    <Route path='/projects' element={<Projects />}></Route>
-                    <Route path='/skills' element={<Skills />}></Route>
-                    <Route path='/contact' element={<Footer />}></Route>
-                </Routes>
             </Provider>
         </>
     );

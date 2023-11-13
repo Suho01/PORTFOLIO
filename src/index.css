@@ -33,11 +33,25 @@ a {text-decoration: none; color: #000;}
         left: -50px;
         z-index: -9;
     }
+    .frontbackdark::after {
+        content: url("./../public/img/dark-after.png");
+        position: absolute;
+        top: -60px;
+        left: -50px;
+        z-index: -9;
+    }
     
     .frontbacksmall::after {
         content: url("./../public/img/after-500.png");
         position: absolute;
         top: -20px;
+        left: -35px;
+        z-index: -9;
+    }
+    .frontbacksmalldark::after {
+        content: url("./../public/img/dark-after-500.png");
+        position: absolute;
+        top: -35px;
         left: -35px;
         z-index: -9;
     }
@@ -52,11 +66,25 @@ a {text-decoration: none; color: #000;}
         left: 0px;
         z-index: -9;
     }
+    .frontbackdark::after {
+        content: url("./../public/img/dark-after-500.png");
+        position: absolute;
+        top: -40px;
+        left: 0px;
+        z-index: -9;
+    }
 
     .frontbacksmall::after {
         content: url("./../public/img/after-250.png");
         position: absolute;
         top: -15px;
+        left: -20px;
+        z-index: -9;
+    }
+    .frontbacksmalldark::after {
+        content: url("./../public/img/dark-after-250.png");
+        position: absolute;
+        top: -20px;
         left: -20px;
         z-index: -9;
     }
@@ -71,9 +99,23 @@ a {text-decoration: none; color: #000;}
         left: -10px;
         z-index: -9;
     }
+    .frontbackdark::after {
+        content: url("./../public/img/dark-after-350.png");
+        position: absolute;
+        top: -30px;
+        left: -10px;
+        z-index: -9;
+    }
 
     .frontbacksmall::after {
         content: url("./../public/img/after-170.png");
+        position: absolute;
+        top: -10px;
+        left: -15px;
+        z-index: -9;
+    }
+    .frontbacksmalldark::after {
+        content: url("./../public/img/dark-after-170.png");
         position: absolute;
         top: -10px;
         left: -15px;
@@ -117,3 +159,54 @@ a {text-decoration: none; color: #000;}
 .navarray:hover::after {
     width: 100%;
 }
+
+/* mouse cursor pointer */
+.custom-cursor {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    pointer-events: none;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    background-color: #d83546; /*사용자 수정*/
+    backface-visibility: hidden;
+    transition: none;
+    mix-blend-mode: difference; /*사용자 수정*/
+    pointer-events: none;
+    border-radius: 50%;
+    transform: scale(1);
+}
+   
+.custom-cursor-icon {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #d83546; /*사용자 수정*/
+    transition: all 0.2s ease;
+    transform-origin: 50% 50%;
+}
+   
+.custom-cursor.custom_cursor_visible {
+    opacity: 1;
+}
+   
+.custom-cursor.custom_cursor_hidden {
+    opacity: 0;
+}
+   
+@media (pointer:none), (pointer:coarse) {
+    #custom_cursor,
+    #custom_cursor .custom-cursor-icon {
+        display: none !important;
+        visibility: hidden;
+        opacity: 0;
+    }
+    
+    * {
+        cursor: auto !important;
+    }
+}
+/* mouse cursor pointer */
