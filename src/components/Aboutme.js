@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { forwardRef, useImperativeHandle } from 'react'
 import { useSelector } from 'react-redux';
 
 function Aboutme() {
-
+    
     const theme = useSelector(state => state.dark);
 
     return (
         <>
+        
         <div className='dark:bg-[#272929]'>
             <div className='lg:max-w-7xl mx-auto relative dark:text-white'>
                 <div className='flex justify-center'>

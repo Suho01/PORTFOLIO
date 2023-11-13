@@ -1,12 +1,31 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { toggleTheme } from '../store';
 import { faBurger, faToggleOff, faToggleOn, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Aboutme from './Aboutme';
+import Projects from './Projects';
 
-function Nav() {
-    const NavArray = ["<About me />", "<Projects />", "<Skills />", "<Contact />"];
+function Nav({sections}) {
+    const NavArray = [
+        {
+            title : "<About me />",
+            link : "aboutme"
+        },
+        {
+            title : "<Projects />",
+            link : "projects"
+        },
+        {
+            title : "<Skills />",
+            link : "skills"
+        },
+        {
+            title : "<Contact />",
+            link : "footer"
+        }
+    ];
 
     const theme = useSelector(state => state.dark);
     const dispatch = useDispatch();
@@ -15,18 +34,18 @@ function Nav() {
 
     const toggleHamburger = () => {
         setHamburger(!hamburger);
-    }
-
+    };
     return (
+        <>
         <div className='lg:max-w-7xl md:max-w-3xl sm:max-w-sm'>
             {/* pc nav start */}
             <div className={`fixed left-1/2 -translate-x-1/2 ${theme === 'light' ? 'bg-white' : 'bg-[#272929]'} lg:w-full z-[999] shadow-md lg:block hidden`}>
                 <ul className='lg:max-w-7xl mx-auto flex justify-between py-6 items-center'>
-                    <li><NavLink className={`${theme === 'light' ? 'text-black' : 'text-white'} font-bold text-2xl`}><span className={`text-base ${theme === 'light' ? 'text-gray-600' : 'text-gray-400'}`}>Frontend Developer</span><br />Jiyeon's Portfolio</NavLink></li>
+                    <li><NavLink to='/' className={`${theme === 'light' ? 'text-black' : 'text-white'} font-bold text-2xl`}><span className={`text-base ${theme === 'light' ? 'text-gray-600' : 'text-gray-400'}`}>Frontend Developer</span><br />Jiyeon's Portfolio</NavLink></li>
                     {
                         NavArray.map((e, i) => {
                             return (
-                                <li key={i} className='hover:font-bold relative navarray text-xl text-center'><NavLink className={`${theme === 'light' ? 'text-black' : 'text-white'}`}>{e}</NavLink></li>
+                                <li key={i} className='hover:font-bold relative navarray text-xl text-center'><Link to={e.link} className={`${theme === 'light' ? 'text-black' : 'text-white'}`}>{e.title}</Link></li>
                             );
                         })
                     }
@@ -50,7 +69,7 @@ function Nav() {
                     {
                         NavArray.map((e, i) => {
                             return (
-                                <li key={i} className='pb-10 text-xl'><NavLink className='text-white'>{e}</NavLink></li>
+                                <li key={i} className='pb-10 text-xl'><Link to={e.link} className='text-white'>{e.title}</Link></li>
                             )
                         })
                     }
@@ -59,6 +78,7 @@ function Nav() {
             </div>
             {/* mobile nav end */}
         </div>
+        </>
     )
 }
 

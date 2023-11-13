@@ -78,7 +78,7 @@ function Projects() {
     const [active, setActive] = useState('');
     const activeFilter = (filter) => {
         setActive(filter);
-    }
+    };
 
     return (
         <>
