@@ -19,7 +19,7 @@ function Footer() {
         },
         {
             "name" : faComments,
-            "link" : "https://github.com/Suho01",
+            "link" : "https://open.kakao.com/me/o2asis",
             "color" : "yellow-500"
         },
         {

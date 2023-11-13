@@ -142,9 +142,6 @@ a {text-decoration: none; color: #000;}
     color: #fff;
 }
 
-.navarray:hover {
-    font-weight: bold;
-}
 .navarray::after {
     transition: 0.5s;
     content: "";
@@ -152,11 +149,25 @@ a {text-decoration: none; color: #000;}
     bottom: 0px;
     left: 0;
     width: 0;
-    height: 15px;
-    background-color: rgb(255, 144, 155);
+    height: 11px;
+    background-color: #ff909b;
+    z-index: -1;
+}
+.navarraydark::after {
+    transition: 0.5s;
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0;
+    height: 11px;
+    background-color: #d83546;
     z-index: -1;
 }
 .navarray:hover::after {
+    width: 100%;
+}
+.navarraydark:hover::after {
     width: 100%;
 }
 

@@ -4,25 +4,27 @@ import { Link, NavLink } from 'react-router-dom'
 import { toggleTheme } from '../store';
 import { faBurger, faToggleOff, faToggleOn, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import Aboutme from './Aboutme';
-import Projects from './Projects';
 
-function Nav({sections}) {
+function Nav() {
     const NavArray = [
         {
             title : "<About me />",
+            title2 : "About me",
             link : "aboutme"
         },
         {
             title : "<Projects />",
+            title2 : "Projects",
             link : "projects"
         },
         {
             title : "<Skills />",
+            title2 : "Skills",
             link : "skills"
         },
         {
             title : "<Contact />",
+            title2 : "Contact",
             link : "footer"
         }
     ];
@@ -45,7 +47,10 @@ function Nav({sections}) {
                     {
                         NavArray.map((e, i) => {
                             return (
-                                <li key={i} className='hover:font-bold relative navarray text-xl text-center'><Link to={e.link} className={`${theme === 'light' ? 'text-black' : 'text-white'}`}>{e.title}</Link></li>
+                                <>                                
+                                    <li key={i} className='font-bold relative navarray text-xl text-center dark:hidden'><Link to={e.link} className={`${theme === 'light' ? 'text-black' : 'text-white'}`}>{e.title}</Link></li>
+                                    <li key={i} className='font-bold relative navarraydark text-xl text-center dark:block hidden'><Link to={e.link} className={`${theme === 'light' ? 'text-black' : 'text-white'}`}>{e.title}</Link></li>
+                                </>
                             );
                         })
                     }
@@ -64,12 +69,12 @@ function Nav({sections}) {
                     }
                 </li>
             </ul>
-            <div className={`lg:hidden block fixed bg-[#D83546]/90 right-0 top-0 z-[59] p-20 pt-40 h-full duration-500 ${hamburger ? 'right-0' : 'right-[-320px]'}`}>
+            <div className={`lg:hidden block fixed bg-[#D83546] right-0 top-0 z-[59] p-20 pt-40 h-full duration-500 ${hamburger ? 'right-0' : 'right-[-280px]'}`}>
                 <ul className='text-white'>
                     {
                         NavArray.map((e, i) => {
                             return (
-                                <li key={i} className='pb-10 text-xl'><Link to={e.link} className='text-white'>{e.title}</Link></li>
+                                <li key={i} className='mb-20 text-base relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[1px] after:bg-white'><Link to={e.link} className='text-white font-bold'>{e.title2}</Link></li>
                             )
                         })
                     }
