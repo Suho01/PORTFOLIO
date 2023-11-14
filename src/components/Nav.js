@@ -1,9 +1,10 @@
-import React, { useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { toggleTheme } from '../store';
 import { faBurger, faToggleOff, faToggleOn, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-scroll';
 
 function Nav() {
     const NavArray = [
@@ -37,6 +38,7 @@ function Nav() {
     const toggleHamburger = () => {
         setHamburger(!hamburger);
     };
+
     return (
         <>
         <div className='lg:max-w-7xl md:max-w-3xl sm:max-w-sm'>
@@ -48,8 +50,8 @@ function Nav() {
                         NavArray.map((e, i) => {
                             return (
                                 <>                                
-                                    <li key={i} className='font-bold relative navarray text-xl text-center dark:hidden'><Link to={e.link} className={`${theme === 'light' ? 'text-black' : 'text-white'}`}>{e.title}</Link></li>
-                                    <li key={i} className='font-bold relative navarraydark text-xl text-center dark:block hidden'><Link to={e.link} className={`${theme === 'light' ? 'text-black' : 'text-white'}`}>{e.title}</Link></li>
+                                    <li key={i} className='font-bold relative navarray text-xl text-center dark:hidden'><Link to={e.link} spy={true} smooth={true} offset={-100} duration={500} className={`${theme === 'light' ? 'text-black' : 'text-white'} cursor-pointer`}>{e.title}</Link></li>
+                                    <li key={i} className='font-bold relative navarraydark text-xl text-center dark:block hidden'><Link to={e.link} spy={true} smooth={true} offset={-100} duration={500} className={`${theme === 'light' ? 'text-black' : 'text-white'} cursor-pointer`}>{e.title}</Link></li>
                                 </>
                             );
                         })
@@ -61,7 +63,7 @@ function Nav() {
 
             {/* mobile nav start */}
             <ul className={`lg:hidden flex fixed z-[99] items-center justify-between px-[5%] ${theme === 'light' ? 'bg-white' : 'bg-[#272929]'} w-full h-20 shadow-md`}>
-                <li><NavLink className={`${theme === 'light' ? 'text-black' : 'text-white'} font-bold text-lg`}><span className={`text-xs ${theme === 'light' ? 'text-gray-600' : 'text-gray-400'}`}>Frontend Developer</span><br />Jiyeon's Portfolio</NavLink></li>
+                <li><NavLink to='/' className={`${theme === 'light' ? 'text-black' : 'text-white'} font-bold text-lg`}><span className={`text-xs ${theme === 'light' ? 'text-gray-600' : 'text-gray-400'}`}>Frontend Developer</span><br />Jiyeon's Portfolio</NavLink></li>
                 <li className={`cursor-pointer ${theme === 'light' ? 'text-black' : 'text-white'}`} onClick={() => toggleHamburger()}>
                     {
                         hamburger ?
@@ -74,7 +76,7 @@ function Nav() {
                     {
                         NavArray.map((e, i) => {
                             return (
-                                <li key={i} className='mb-20 text-base relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[1px] after:bg-white'><Link to={e.link} className='text-white font-bold'>{e.title2}</Link></li>
+                                <li key={i} className='mb-20 text-base relative after:absolute after:-bottom-1 after:left-0 after:w-full after:h-[1px] after:bg-white'><Link to={e.link} spy={true} smooth={true} offset={-80} duration={500} className='text-white font-bold cursor-pointer'>{e.title2}</Link></li>
                             )
                         })
                     }

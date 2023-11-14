@@ -82,7 +82,7 @@ function Projects() {
 
     return (
         <>
-        <div className='dark:bg-[#272929] bg-white'>
+        <div className='dark:bg-[#272929] bg-white' id='projects'>
             <div className='lg:max-w-7xl mx-auto relative lg:pt-0 md:pt-0 pt-20'>
                 <div className='flex justify-center dark:text-white'>
                     <div className='text-center lg:tracking-[-0.5em] md:tracking-[-0.2em] tracking-tighter leading-none lg:my-24'>

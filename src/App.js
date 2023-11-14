@@ -11,7 +11,7 @@ import Nav from './components/Nav';
 import GoTop from './components/GoTop';
 
 function App() {
-    
+
     return (
         <>
             <Provider store={store}>
