@@ -8,7 +8,7 @@ function Aboutme() {
     return (
         <>
         
-        <div className='dark:bg-[#272929] bg-white' id='aboutme'>
+        <div className='dark:bg-[#272929] bg-white pb-24' id='aboutme'>
             <div className='lg:max-w-7xl mx-auto relative dark:text-white'>
                 <div className='flex justify-center'>
                     <div className='text-center lg:tracking-[-0.5em] md:tracking-[-0.2em] tracking-tighter leading-none lg:my-24'>

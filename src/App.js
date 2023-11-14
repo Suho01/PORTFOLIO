@@ -5,15 +5,23 @@ import Projects from './components/Projects';
 import Skills from './components/Skills';
 import { Provider, useDispatch, useSelector } from 'react-redux';
 import store, { toggleTheme } from "./store";
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Footer from './components/Footer';
 import Nav from './components/Nav';
 import GoTop from './components/GoTop';
+import Loading from './pages/Loading';
 
 function App() {
-
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 1000);
+    }, []);
     return (
         <>
+        {
+            loading ? (
+                <Loading />
+            ) : (
             <Provider store={store}>
                 <Inner />
                 <Nav />
@@ -24,6 +32,7 @@ function App() {
                 <Footer />
                 <GoTop />
             </Provider>
+            )}
         </>
     );
 }
