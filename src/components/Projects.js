@@ -4,8 +4,16 @@ function Projects() {
 
     const imgArray = [
         {
+            "img" : "portfolio",
+            "title" : "PERSONAL",
+            "type" : "personal",
+            "use" : "·React　·TailwindCSS　·JavaScript",
+            "story" : "개인 포트폴리오 filter함수 사용, 다크모드, 반응형 구현",
+            "link" : "https://suho01.vercel.app/"
+        },
+        {
             "img" : "teampuri",
-            "title" : "TEAM PROJECTS",
+            "title" : "TEAM",
             "type" : "team",
             "use" : "·React　·TailwindCSS　·Firebase　·JavaScript　·Redux　·Node.js",
             "story" : "메인 페이지, 로그인 및 회원가입 기능 개발, 전체 디자인, 네이버 지도 API를 활용한 POI 탐색, 업종/기간/지역별 필터링 기능 구현, tailwindCSS 이용한 반응형 구현",
@@ -13,7 +21,7 @@ function Projects() {
         },
         {
             "img" : "festival",
-            "title" : "PERSONAL PROJECTS",
+            "title" : "PERSONAL",
             "type" : "personal",
             "use" : "·React　·Styled Components　·JavaScript　·API공공데이터",
             "story" : "filter함수를 이용해 각 구군마다 컨텐츠가 다르게 나타나는 기능 구현, 반응형 구현",
@@ -21,7 +29,7 @@ function Projects() {
         },
         {
             "img" : "quiz",
-            "title" : "PERSONAL PROJECTS",
+            "title" : "PERSONAL",
             "type" : "personal",
             "use" : "·React　·TailwindCSS　·JavaScript",
             "story" : "랜덤함수로 문제 순서 및 문제 유형 구현, 오답노트 구현, tailwindCSS 이용한 반응형 구현",
@@ -94,8 +102,8 @@ function Projects() {
                 </div>
                 <div className='lg:flex md:flex lg:justify-center md:justify-center gap-x-2 my-20 px-[2%]'>
                     <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === '' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter(""); activeFilter("");}}>SHOW ALL</div>
-                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'personal' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter("personal"); activeFilter("personal");}}>PERSONAL PROJECTS</div>
-                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'team' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter("team"); activeFilter("team");}}>TEAM PROJECTS</div>
+                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'personal' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter("personal"); activeFilter("personal");}}>PERSONAL</div>
+                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'team' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter("team"); activeFilter("team");}}>TEAM</div>
                     <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer bg-white p-3 text-[#D83546] font-bold border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'webapp' ? 'activeColor' : ''}`} onClick={() => {setFilter("webapp"); activeFilter("webapp");}}>WEB APP</div>
                 </div>
                 <ul className='flex flex-wrap mx-auto lg:justify-start lg:gap-x-5 justify-between px-[2%] gap-y-5 pb-40'>
