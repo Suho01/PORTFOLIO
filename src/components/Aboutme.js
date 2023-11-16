@@ -25,8 +25,7 @@ function Aboutme() {
                     <ul className={`lg:text-lg md:text-base text-sm ${theme === 'light' ? 'text-gray-600' : 'text-gray-300'} lg:tracking-tighter lg:order-1 lg:text-left
                     text-center md:pb-20 px-[2%] mr-5 leading-relaxed`}>
                         <li className={`font-bold lg:text-3xl text-xl relative after:w-4 after:h-1 after:bg-[#D83546] after:absolute after:left-0 after:-top-1 inline-block ${theme === 'light' ? 'text-black' : 'text-white'} pb-2`}>Profile</li>
-                        <li><span className=''>이름</span> : 이지연 (Lee Jiyeon)</li>
-                        <li>생년월일 : 1997.03.06</li>
+                        <li><span className=''>이름</span> : 이지연</li>
                         <li>학력 : 건국대학교 컴퓨터공학과</li>
                         <li>E-mail : suhoprimavera@gmail.com</li>
                         <li>MBTI : ENFJ 정의로운 사회운동가</li>

@@ -5,15 +5,15 @@ function Projects() {
     const imgArray = [
         {
             "img" : "portfolio",
-            "title" : "PERSONAL",
+            "title" : "개인 포트폴리오",
             "type" : "personal",
             "use" : "·React　·TailwindCSS　·JavaScript",
-            "story" : "개인 포트폴리오 filter함수 사용, 다크모드, 반응형 구현",
+            "story" : "filter함수 사용, 다크모드, 반응형 구현",
             "link" : "https://suho01.vercel.app/"
         },
         {
             "img" : "benjamin",
-            "title" : "PERSONAL",
+            "title" : "벤자민 버튼의 시간은 거꾸로 간다",
             "type" : "personal",
             "use" : "·React　·TailwindCSS　·JavaScript",
             "story" : "거꾸로 가는 시계",
@@ -21,15 +21,16 @@ function Projects() {
         },
         {
             "img" : "teampuri",
-            "title" : "TEAM",
+            "title" : "푸리푸리",
             "type" : "team",
             "use" : "·React　·TailwindCSS　·Firebase　·JavaScript　·Redux　·Node.js",
-            "story" : "메인 페이지, 로그인 및 회원가입 기능 개발, 전체 디자인, 네이버 지도 API를 활용한 POI 탐색, 업종/기간/지역별 필터링 기능 구현, tailwindCSS 이용한 반응형 구현",
+            "story" : "메인 페이지, 로그인 및 회원가입 기능, 다크모드, 다국어, 반응형 구현",
+            "contribution" : " (기여도 : 25%)",
             "link" : "https://team-puri.vercel.app/"
         },
         {
             "img" : "festival",
-            "title" : "PERSONAL",
+            "title" : "부산 국제 페스티벌",
             "type" : "personal",
             "use" : "·React　·Styled Components　·JavaScript　·API공공데이터",
             "story" : "filter함수를 이용해 각 구군마다 컨텐츠가 다르게 나타나는 기능 구현, 반응형 구현",
@@ -37,90 +38,94 @@ function Projects() {
         },
         {
             "img" : "quiz",
-            "title" : "PERSONAL",
+            "title" : "Brain Storm : Quiz Edition",
             "type" : "personal",
             "use" : "·React　·TailwindCSS　·JavaScript",
-            "story" : "랜덤함수로 문제 순서 및 문제 유형 구현, 오답노트 구현, tailwindCSS 이용한 반응형 구현",
+            "story" : "랜덤함수로 문제 순서 및 문제 유형 구현, 오답노트 구현, 반응형 구현",
             "link" : "https://quiz-rust-one.vercel.app/"
         },
         {
             "img" : "police",
-            "title" : "WEB APP",
+            "title" : "경찰청",
             "type" : "webapp",
             "use" : "·HTML　·SCSS　·JavaScript",
-            "story" : "",
+            "story" : "클론코딩",
             "link" : "https://suho01.github.io/police/"
         },
         {
             "img" : "seoul",
-            "title" : "WEB APP",
+            "title" : "서울특별시 교육감 조희연",
             "type" : "webapp",
             "use" : "·HTML　·SCSS　·JavaScript",
-            "story" : "",
+            "story" : "리디자인",
             "link" : "https://suho01.github.io/seoul/"
         },
         {
             "img" : "burgerking",
-            "title" : "WEB APP",
+            "title" : "버거킹",
             "type" : "webapp",
             "use" : "·HTML　·SCSS　·JavaScript",
-            "story" : "",
+            "story" : "리디자인",
             "link" : "https://suho01.github.io/burgerking/"
         },
         {
             "img" : "gongcha",
-            "title" : "WEB APP",
+            "title" : "공차",
             "type" : "webapp",
             "use" : "·HTML　·CSS　·JavaScript",
-            "story" : "",
+            "story" : "클론코딩",
             "link" : "https://suho01.github.io/gongcha/"
         },
         {
             "img" : "subway",
-            "title" : "WEB APP",
+            "title" : "써브웨이",
             "type" : "webapp",
             "use" : "·HTML　·CSS　·JavaScript",
-            "story" : "",
+            "story" : "클론코딩",
             "link" : "https://suho01.github.io/subway/"
         },
         {
             "img" : "tae",
-            "title" : "TEAM",
+            "title" : "태성김치",
             "type" : "team",
             "use" : "·HTML　·CSS　·JavaScript",
             "story" : "디자인 및 모바일 반응형 제작",
+            "contribution" : " (기여도 : 20%)",
             "link" : "http://www.tskimchi.com/sub/index.php"
         },
         {
             "img" : "kilf",
-            "title" : "TEAM",
+            "title" : "한국지방세연구원",
             "type" : "team",
             "use" : "·HTML　·CSS　·JavaScript",
             "story" : "디자인 및 모바일 반응형 제작",
+            "contribution" : " (기여도 : 20%)",
             "link" : "https://www.kilf.re.kr/"
         },
         {
             "img" : "korean",
-            "title" : "TEAM",
+            "title" : "한국문학번역원",
             "type" : "team",
             "use" : "·HTML　·CSS　·JavaScript",
             "story" : "디자인 및 모바일 반응형 제작",
+            "contribution" : " (기여도 : 20%)",
             "link" : "https://ltikorea.or.kr/"
         },
         {
             "img" : "kukeeper",
-            "title" : "TEAM",
+            "title" : "Ku : Keeper",
             "type" : "team",
             "use" : "·Arduino　·MySQL　·Apache　·PHP　·C++　·HTML",
-            "story" : "[졸업작품] 아두이노 모듈을 활용하여 만든 도어락, 관리 기능은 웹 페이지 및 서버를 통해 구현",
+            "contribution" : " (기여도 : 45%)",
+            "story" : "아두이노 모듈로 만드는 도어락 졸업작품, 관리 기능은 웹 페이지 및 서버를 통해 구현",
             "link" : ""
         },
         {
             "img" : "kumeal",
-            "title" : "PERSONAL",
+            "title" : "Starlight",
             "type" : "personal",
             "use" : "·Swift",
-            "story" : "[IOS] Swift로 간단한 애플리케이션 만들기",
+            "story" : "Swift로 만드는 리뷰 애플리케이션",
             "link" : ""
         }
     ];
@@ -161,10 +166,13 @@ function Projects() {
                         filterData.map((e, i) => {
                             return (
                                 <>
-                                    <li key={i} className='project relative lg:basis-[32%] md:basis-[49%] basis-full cursor-pointer border shadow-md' onClick={() => setIsModal(true)}>
+                                    <li key={i} className='relative lg:basis-[32%] md:basis-[49%] basis-full cursor-pointer border shadow-md' onClick={() => setIsModal(true)}>
                                         <a href={e.link} target='_blank'>
                                             <img className='w-full' src={`./../../img/${e.img}.png`} alt={i} />
-                                            <p key={i} className='text-xl font-bold lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer text-center'>{e.title}<p className='text-base'>{e.use}</p><p className='text-base'>{e.story}</p></p>
+                                            <button key={i} className='text-2xl font-bold lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer text-center'>{e.title}<span className='text-base font-normal'>{e.contribution}</span></button>                                            
+                                            <p className='text-base'>{e.use}</p>
+                                            <p className='text-base'>{e.story}</p>
+                                            
                                         </a>
                                     </li>
                                 </>
@@ -174,9 +182,9 @@ function Projects() {
                 </ul>
             </div>
         </div>
-        {
+        {/* {
             isModal && <Modal closeModal={setIsModal} />
-        }
+        } */}
         </>
     )
 }
