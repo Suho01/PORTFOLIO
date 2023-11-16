@@ -74,6 +74,46 @@ function Projects() {
             "use" : "·HTML　·CSS　·JavaScript",
             "story" : "",
             "link" : "https://suho01.github.io/subway/"
+        },
+        {
+            "img" : "tae",
+            "title" : "TEAM",
+            "type" : "team",
+            "use" : "·HTML　·CSS　·JavaScript",
+            "story" : "디자인 및 모바일 반응형 제작",
+            "link" : "http://www.tskimchi.com/sub/index.php"
+        },
+        {
+            "img" : "kilf",
+            "title" : "TEAM",
+            "type" : "team",
+            "use" : "·HTML　·CSS　·JavaScript",
+            "story" : "디자인 및 모바일 반응형 제작",
+            "link" : "https://www.kilf.re.kr/"
+        },
+        {
+            "img" : "korean",
+            "title" : "TEAM",
+            "type" : "team",
+            "use" : "·HTML　·CSS　·JavaScript",
+            "story" : "디자인 및 모바일 반응형 제작",
+            "link" : "https://ltikorea.or.kr/"
+        },
+        {
+            "img" : "kukeeper",
+            "title" : "TEAM",
+            "type" : "team",
+            "use" : "·Arduino　·MySQL　·Apache　·PHP　·C++　·HTML",
+            "story" : "[졸업작품] 아두이노 모듈을 활용하여 만든 도어락, 관리 기능은 웹 페이지 및 서버를 통해 구현",
+            "link" : ""
+        },
+        {
+            "img" : "kumeal",
+            "title" : "PERSONAL",
+            "type" : "personal",
+            "use" : "·Swift",
+            "story" : "[IOS] Swift로 간단한 애플리케이션 만들기",
+            "link" : ""
         }
     ];
 
