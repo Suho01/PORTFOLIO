@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux';
 
 function Projects() {
 
@@ -32,7 +33,7 @@ function Projects() {
             "img" : "festival",
             "title" : "부산 국제 페스티벌",
             "type" : "personal",
-            "use" : "·React　·Styled Components　·JavaScript　·API공공데이터",
+            "use" : "·React　·Styled Components　·JavaScript　·API",
             "story" : "filter함수를 이용해 각 구군마다 컨텐츠가 다르게 나타나는 기능 구현, 반응형 구현",
             "link" : "https://festival-mu.vercel.app/"
         },
@@ -115,7 +116,7 @@ function Projects() {
             "img" : "kukeeper",
             "title" : "Ku : Keeper",
             "type" : "team",
-            "use" : "·Arduino　·MySQL　·Apache　·PHP　·C++　·HTML",
+            "use" : "·Arduino　·MySQL　·Apache　·PHP　·C++",
             "contribution" : " (기여도 : 45%)",
             "story" : "아두이노 모듈로 만드는 도어락 졸업작품, 관리 기능은 웹 페이지 및 서버를 통해 구현",
             "link" : ""
@@ -142,6 +143,7 @@ function Projects() {
     };
 
     const [isModal, setIsModal] = useState(false);
+    const theme = useSelector(state => state.dark);
 
     return (
         <>
@@ -166,12 +168,14 @@ function Projects() {
                         filterData.map((e, i) => {
                             return (
                                 <>
-                                    <li key={i} className='relative lg:basis-[32%] md:basis-[49%] basis-full cursor-pointer border shadow-md' onClick={() => setIsModal(true)}>
+                                    <li key={i} className={`relative lg:basis-[32%] md:basis-[49%] basis-full cursor-pointer border shadow-md bg-white`} onClick={() => setIsModal(true)}>
                                         <a href={e.link} target='_blank'>
                                             <img className='w-full' src={`./../../img/${e.img}.png`} alt={i} />
-                                            <button key={i} className='text-2xl font-bold lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer text-center'>{e.title}<span className='text-base font-normal'>{e.contribution}</span></button>                                            
-                                            <p className='text-base'>{e.use}</p>
-                                            <p className='text-base'>{e.story}</p>
+                                            <ul className='p-5'>
+                                                <li key={i} className='pb-2 text-xl lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer font-semibold'>{e.title}<span className='text-base font-normal text-black'>{e.contribution}</span></li>                                            
+                                                <li className='pb-2 text-sm text-[#D83546] font-bold'>{e.use}</li>
+                                                <li className='text-base'>{e.story}</li>
+                                            </ul>
                                             
                                         </a>
                                     </li>

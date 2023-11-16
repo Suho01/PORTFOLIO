@@ -40,10 +40,10 @@ function Skills() {
         {
             "title" : "Tool",
             "desc" : {
-                "Git" : "이거 못하면 개발자 아님..",
-                "Github" : "이거 모르면 취업 못 함..",
-                "Figma" : "피그마 선생님 조아요",
-                "Adobe Photoshop" : "디자인 마스터",
+                "Git" : "깃을 통해 원활한 협업을 할 줄 압니다.",
+                "Github" : "원하는 시점으로 복원 가능 ",
+                "Figma" : "피그마로 레이아웃 구상을 할 수 있습니다.",
+                "Adobe Photoshop" : "이미지/사진 편집, 로고/배너 만들기, 움직이는 이미지를 만들 수 있습니다.",
                 "Adobe Illustrator" : "10세에 GTQ 마스터 하다 . . ."
             }
         }
