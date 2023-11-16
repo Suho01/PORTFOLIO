@@ -7,44 +7,44 @@ function Skills() {
         {
             "title" : "Language",
             "desc" : {
-                "Javascript" : "함수를 사용할 줄 압니다.",
-                "Typescript" : "타입을 선언할 줄 압니다.",
-                "NextJS" : "사용해봤습니다."
+                "./../../img/js.png" : "JavaScript : 함수를 선언해서 자유롭게 사용할 줄 압니다.",
+                "TypeScript" : "타입을 선언할 줄 압니다."
             }
         },
         {
             "title" : "Framework / Library",
             "desc" : {
-                "React" : "상태 관리 및 redux 활용 가능",
-                "NodeJS" : "데이터베이스 연동 가능"
+                "React" : "라이브러리를 설치하고 상태 관리 및 redux 활용 가능합니다.",
+                "NodeJS" : "데이터베이스 연동 가능합니다.",
+                "NextJS" : "사용해봤습니다."
             }
         },
         {
             "title" : "MarkUp / Design",
             "desc" : {
                 "HTML" : "시맨틱 마크업과 브라우저 렌더링 프로세스에 대해서 잘 알고 있습니다.",
-                "CSS" : "완존 잘해요",
-                "SCSS" : "완벽하게 쓸 줄 알아요 제 별명이 scss성애자",
-                "TailwindCSS" : "다크모드, 다국어, 모바일 반응형 구현 삽가능",
-                "Styled Components" : "아 쌉 가능"
+                "CSS" : "원하는 기능을 자유롭게 구현할 수 있습니다.",
+                "TailwindCSS" : "다크모드, 다국어, 모바일 반응형 구현이 가능합니다.",
+                "Styled Components" : "props를 활용한 다크모드 구현이 가능합니다."
             }   
         },
         {
             "title" : "Database",
             "desc" : {
-                "MongoDB" : "몽골에서 온 몽고디비인가?",
-                "MySql" : "학교에서 배웟는데 테이블 잘 만듦",
-                "MariaDB" : "써도 된다네요."
+                "MongoDB" : "데이터 연동이 가능합니다.",
+                "Firebase" : "사용해봤습니다.",
+                "MySQL" : "테이블을 만들고 수정, 삭제를 자유롭게 할 줄 압니다.",
+                "MariaDB" : "MySQL로 연동해서 사용해봤습니다."
             }
         },
         {
             "title" : "Tool",
             "desc" : {
                 "Git" : "깃을 통해 원활한 협업을 할 줄 압니다.",
-                "Github" : "원하는 시점으로 복원 가능 ",
+                "Github" : "원하는 시점으로 복원 가능하며 여러 사람이 하나의 소스를 작업해도 충돌을 방지할 수 있습니다.",
                 "Figma" : "피그마로 레이아웃 구상을 할 수 있습니다.",
                 "Adobe Photoshop" : "이미지/사진 편집, 로고/배너 만들기, 움직이는 이미지를 만들 수 있습니다.",
-                "Adobe Illustrator" : "10세에 GTQ 마스터 하다 . . ."
+                "Adobe Illustrator" : "벡터 이미지, 3d이미지를 만들 수 있습니다."
             }
         }
     ]
@@ -82,6 +82,7 @@ function Skills() {
                                             })
                                         }
                                     </li>
+                                    <li><img src='./../../public/img/js.png' /></li>
                                     </>
                                 )
                             })
