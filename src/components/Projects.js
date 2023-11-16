@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Projects() {
 
@@ -136,6 +136,8 @@ function Projects() {
         setActive(filter);
     };
 
+    const [isModal, setIsModal] = useState(false);
+
     return (
         <>
         <div className='dark:bg-[#272929] bg-white' id='projects'>
@@ -159,7 +161,7 @@ function Projects() {
                         filterData.map((e, i) => {
                             return (
                                 <>
-                                    <li key={i} className='project relative lg:basis-[32%] md:basis-[49%] basis-full cursor-pointer group border shadow-md'>
+                                    <li key={i} className='project relative lg:basis-[32%] md:basis-[49%] basis-full cursor-pointer group border shadow-md' onClick={() => setIsModal(true)}>
                                         <a href={e.link} target='_blank'>
                                             <img className='w-full' src={`./../../img/${e.img}.png`} alt={i} />
                                             <p key={i} className='hidden group-hover:block group-hover:absolute group-hover:z-10 group-hover:top-1/2 group-hover:left-1/2 group-hover:-translate-x-1/2 group-hover:-translate-y-1/2 lg:group-hover:text-xl group-hover:font-bold lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer text-white text-center'>{e.title}<p className='text-xs'>{e.use}</p><p className='text-xs'>{e.story}</p></p>
@@ -172,14 +174,28 @@ function Projects() {
                 </ul>
             </div>
         </div>
+        {
+            isModal && <Modal closeModal={setIsModal} />
+        }
         </>
     )
 }
 
-function Modal() {
+function Modal(props) {
+    useEffect(() => {
+        document.body.style.overflow = 'hidden';
+        return () => {
+            document.body.style.overflow = 'unset';
+        };
+    }, []);
     return (
         <>
-        
+            <div className='fixed w-full h-full bg-black/50 left-0 top-0 z-50' onClick={() => {props.closeModal(false)}}>
+                <div className="bg-white fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2">
+                    <p className='p-5'>test</p>
+                    <button className="absolute top-5 right-5 text-xl" onClick={() => {props.closeModal(false)}}>❌</button>
+                </div>
+            </div>
         </>
     )
 }
