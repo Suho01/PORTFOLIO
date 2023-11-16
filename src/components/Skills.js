@@ -33,7 +33,8 @@ function Skills() {
             "title" : "Database",
             "desc" : {
                 "MongoDB" : "몽골에서 온 몽고디비인가?",
-                "MySql" : "학교에서 배웟는데 테이블 잘 만듦"
+                "MySql" : "학교에서 배웟는데 테이블 잘 만듦",
+                "MariaDB" : "써도 된다네요."
             }
         },
         {
