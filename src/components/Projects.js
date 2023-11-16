@@ -12,6 +12,14 @@ function Projects() {
             "link" : "https://suho01.vercel.app/"
         },
         {
+            "img" : "benjamin",
+            "title" : "PERSONAL",
+            "type" : "personal",
+            "use" : "·React　·TailwindCSS　·JavaScript",
+            "story" : "거꾸로 가는 시계",
+            "link" : "https://benjamin-button.vercel.app/"
+        },
+        {
             "img" : "teampuri",
             "title" : "TEAM",
             "type" : "team",
@@ -164,6 +172,14 @@ function Projects() {
                 </ul>
             </div>
         </div>
+        </>
+    )
+}
+
+function Modal() {
+    return (
+        <>
+        
         </>
     )
 }

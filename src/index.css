@@ -16,9 +16,6 @@ a {text-decoration: none; color: #000;}
     background-color: #d83546;
     color: #fff;
 }
-::-webkit-scrollbar-thumb {
-    background-color: #d83546;
-}
 
 .playfair {
     font-family: 'Playfair Display', serif;
