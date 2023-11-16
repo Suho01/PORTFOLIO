@@ -7,7 +7,7 @@ function Skills() {
         {
             "title" : "Language",
             "desc" : {
-                "./../../img/js.png" : "JavaScript : 함수를 선언해서 자유롭게 사용할 줄 압니다.",
+                "./../../img/skills/js.png" : "JavaScript : 함수를 선언해서 자유롭게 사용할 줄 압니다.",
                 "TypeScript" : "타입을 선언할 줄 압니다."
             }
         },
@@ -47,7 +47,21 @@ function Skills() {
                 "Adobe Illustrator" : "벡터 이미지, 3d이미지를 만들 수 있습니다."
             }
         }
-    ]
+    ];
+
+    const Title = ["Language", "Framework / Library", "MarkUp / Design", "Database", "Tool"];
+    const ToolLanguage = [
+        {
+            img : "js.png",
+            name : "JavaScript",
+            desc : "함수를 선언해서 자유롭게 사용할 줄 압니다."
+        },
+        {
+            img : "js.png",
+            name : "TypeScript",
+            desc : "타입을 선언할 줄 압니다."
+        },
+    ];
 
     const theme = useSelector(state => state.dark);
 
@@ -65,10 +79,22 @@ function Skills() {
                 </div>
                 <div className='flex lg:justify-between items-center'>
                     <ul className='font-bold lg:text-2xl md:text-xl text-lg lg:leading-loose px-[2%]'>
+                        <li>Language</li>
+                        {
+                            ToolLanguage.map((e, i) => {
+                                return (
+                                    <li className='lg:text-xl lg:leading-loose font-normal flex pb-5 md:text-lg text-base flex-wrap' key={i}><img src={`./../../img/skills/${e.img}`} className='w-40' /></li>
+                                )
+                            })
+                        }
+                        <li>Framework / Library</li>
+                        <li>MarkUp / Design</li>
+                        <li>Database</li>
+                        <li>Tool</li>
                         {
                             SkillArray.map((e, i) => {
                                 return (
-                                    <>                                    
+                                    <>
                                     <li key={i}>{e.title}</li>
                                     <li className='lg:text-xl lg:leading-loose font-normal flex pb-5 md:text-lg text-base flex-wrap'>
                                         {
@@ -82,7 +108,6 @@ function Skills() {
                                             })
                                         }
                                     </li>
-                                    <li><img src='./../../public/img/js.png' /></li>
                                     </>
                                 )
                             })
