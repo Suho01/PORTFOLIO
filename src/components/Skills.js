@@ -5,7 +5,7 @@ function Skills() {
 
     const SkillArray = [
         {
-            "title" : "LanguageArray",
+            "title" : "Language",
             "desc" : {
                 "Javascript" : "함수를 사용할 줄 압니다.",
                 "Typescript" : "타입을 선언할 줄 압니다.",
@@ -20,7 +20,7 @@ function Skills() {
             }
         },
         {
-            "title" : "MarkUp",
+            "title" : "MarkUp / Design",
             "desc" : {
                 "HTML" : "시맨틱 마크업과 브라우저 렌더링 프로세스에 대해서 잘 알고 있습니다.",
                 "CSS" : "완존 잘해요",
