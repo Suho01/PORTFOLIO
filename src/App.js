@@ -18,21 +18,22 @@ function App() {
     }, []);
     return (
         <>
-        {
-            loading ? (
-                <Loading />
-            ) : (
-            <Provider store={store}>
-                <Inner />
-                <Nav />
-                <Intro />
-                <Aboutme />
-                <Projects />
-                <Skills />
-                <Footer />
-                <GoTop />
-            </Provider>
-            )}
+            {
+                loading ? (
+                    <Loading />
+                ) : (
+                    <Provider store={store}>
+                        <Inner />
+                        <Nav />
+                        <Intro />
+                        <Aboutme />
+                        <Projects />
+                        <Skills />
+                        <Footer />
+                        <GoTop />
+                    </Provider>
+                )
+            }
         </>
     );
 }

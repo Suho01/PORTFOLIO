@@ -6,10 +6,11 @@ function Projects() {
     const imgArray = [
         {
             "img" : "portfolio",
-            "title" : "개인 포트폴리오",
+            "title" : "Developing Frontend Experiences",
             "type" : "personal",
             "use" : "·React　·TailwindCSS　·JavaScript",
-            "story" : "filter함수 사용, 다크모드, 반응형 구현",
+            "date" : 30,
+            "story" : "filter함수 사용, 다크모드, 반응형 구현 개인 포트폴리오",
             "link" : "https://suho01.vercel.app/"
         },
         {
@@ -17,6 +18,7 @@ function Projects() {
             "title" : "벤자민 버튼의 시간은 거꾸로 간다",
             "type" : "personal",
             "use" : "·React　·TailwindCSS　·JavaScript",
+            "date" : 1,
             "story" : "거꾸로 가는 시계",
             "link" : "https://benjamin-button.vercel.app/"
         },
@@ -25,6 +27,7 @@ function Projects() {
             "title" : "푸리푸리",
             "type" : "team",
             "use" : "·React　·TailwindCSS　·Firebase　·JavaScript　·Redux　·Node.js",
+            "date" : 35,
             "story" : "메인 페이지, 로그인 및 회원가입 기능, 다크모드, 다국어, 반응형 구현",
             "contribution" : " (기여도 : 25%)",
             "link" : "https://team-puri.vercel.app/"
@@ -34,6 +37,7 @@ function Projects() {
             "title" : "부산 국제 페스티벌",
             "type" : "personal",
             "use" : "·React　·Styled Components　·JavaScript　·API",
+            "date" : 3,
             "story" : "filter함수를 이용해 각 구군마다 컨텐츠가 다르게 나타나는 기능 구현, 반응형 구현",
             "link" : "https://festival-mu.vercel.app/"
         },
@@ -42,6 +46,7 @@ function Projects() {
             "title" : "Brain Storm : Quiz Edition",
             "type" : "personal",
             "use" : "·React　·TailwindCSS　·JavaScript",
+            "date" : 3,
             "story" : "랜덤함수로 문제 순서 및 문제 유형 구현, 오답노트 구현, 반응형 구현",
             "link" : "https://quiz-rust-one.vercel.app/"
         },
@@ -50,6 +55,7 @@ function Projects() {
             "title" : "경찰청",
             "type" : "webapp",
             "use" : "·HTML　·SCSS　·JavaScript",
+            "date" : 3,
             "story" : "클론코딩",
             "link" : "https://suho01.github.io/police/"
         },
@@ -58,6 +64,7 @@ function Projects() {
             "title" : "서울특별시 교육감 조희연",
             "type" : "webapp",
             "use" : "·HTML　·SCSS　·JavaScript",
+            "date" : 1,
             "story" : "리디자인",
             "link" : "https://suho01.github.io/seoul/"
         },
@@ -66,6 +73,7 @@ function Projects() {
             "title" : "버거킹",
             "type" : "webapp",
             "use" : "·HTML　·SCSS　·JavaScript",
+            "date" : 5,
             "story" : "리디자인",
             "link" : "https://suho01.github.io/burgerking/"
         },
@@ -74,6 +82,7 @@ function Projects() {
             "title" : "공차",
             "type" : "webapp",
             "use" : "·HTML　·CSS　·JavaScript",
+            "date" : 6,
             "story" : "클론코딩",
             "link" : "https://suho01.github.io/gongcha/"
         },
@@ -82,6 +91,7 @@ function Projects() {
             "title" : "써브웨이",
             "type" : "webapp",
             "use" : "·HTML　·CSS　·JavaScript",
+            "date" : 12,
             "story" : "클론코딩",
             "link" : "https://suho01.github.io/subway/"
         },
@@ -90,6 +100,7 @@ function Projects() {
             "title" : "태성김치",
             "type" : "team",
             "use" : "·HTML　·CSS　·JavaScript",
+            "date" : 28,
             "story" : "디자인 및 모바일 반응형 제작",
             "contribution" : " (기여도 : 20%)",
             "link" : "http://www.tskimchi.com/sub/index.php"
@@ -99,6 +110,7 @@ function Projects() {
             "title" : "한국지방세연구원",
             "type" : "team",
             "use" : "·HTML　·CSS　·JavaScript",
+            "date" : 28,
             "story" : "디자인 및 모바일 반응형 제작",
             "contribution" : " (기여도 : 20%)",
             "link" : "https://www.kilf.re.kr/"
@@ -108,6 +120,7 @@ function Projects() {
             "title" : "한국문학번역원",
             "type" : "team",
             "use" : "·HTML　·CSS　·JavaScript",
+            "date" : 62,
             "story" : "디자인 및 모바일 반응형 제작",
             "contribution" : " (기여도 : 20%)",
             "link" : "https://ltikorea.or.kr/"
@@ -117,6 +130,7 @@ function Projects() {
             "title" : "Ku : Keeper",
             "type" : "team",
             "use" : "·Arduino　·MySQL　·Apache　·PHP　·C++",
+            "date" : 146,
             "contribution" : " (기여도 : 45%)",
             "story" : "아두이노 모듈로 만드는 도어락 졸업작품, 관리 기능은 웹 페이지 및 서버를 통해 구현",
             "link" : ""
@@ -126,6 +140,7 @@ function Projects() {
             "title" : "Starlight",
             "type" : "personal",
             "use" : "·Swift",
+            "date" : 7,
             "story" : "Swift로 만드는 리뷰 애플리케이션",
             "link" : ""
         }
@@ -172,8 +187,9 @@ function Projects() {
                                         <a href={e.link} target='_blank'>
                                             <img className='w-full' src={`./../../img/${e.img}.png`} alt={i} />
                                             <ul className='p-5'>
-                                                <li key={i} className='pb-2 text-xl lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer font-semibold'>{e.title}<span className='text-base font-normal text-black'>{e.contribution}</span></li>                                            
+                                                <li key={i} className='pb-2 text-xl lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer font-semibold'>{e.title}<span className='text-base font-normal text-black'>{e.contribution}</span></li>
                                                 <li className='pb-2 text-sm text-[#D83546] font-bold'>{e.use}</li>
+                                                <li className='pb-2 text-sm text-[#D83546]'>소요기간 : {e.date}일</li>
                                                 <li className='text-base'>{e.story}</li>
                                             </ul>
                                             
