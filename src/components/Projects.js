@@ -93,7 +93,7 @@ function Projects() {
             "use" : "·HTML　·CSS　·JavaScript",
             "date" : 12,
             "story" : "클론코딩",
-            "link" : "https://suho01.github.io/subway/"
+            "link" : "https://suho01-subway.vercel.app/"
         },
         {
             "img" : "tae",
@@ -101,7 +101,7 @@ function Projects() {
             "type" : "team",
             "use" : "·HTML　·CSS　·JavaScript",
             "date" : 28,
-            "story" : "디자인 및 모바일 반응형 제작",
+            "story" : "디자인 및 모바일 적응형 제작",
             "contribution" : " (기여도 : 20%)",
             "link" : "http://www.tskimchi.com/sub/index.php"
         },
@@ -121,7 +121,7 @@ function Projects() {
             "type" : "team",
             "use" : "·HTML　·CSS　·JavaScript",
             "date" : 62,
-            "story" : "디자인 및 모바일 반응형 제작",
+            "story" : "디자인 및 모바일 적응형 제작",
             "contribution" : " (기여도 : 20%)",
             "link" : "https://ltikorea.or.kr/"
         },
