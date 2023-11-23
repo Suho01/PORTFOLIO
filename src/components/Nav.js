@@ -71,7 +71,7 @@ function Nav() {
                     }
                 </li>
             </ul>
-            <div className={`lg:hidden block fixed bg-[#D83546] right-0 top-0 z-[59] p-20 pt-40 h-full duration-500 ${hamburger ? 'right-0' : 'right-[-280px]'}`}>
+            <div className={`lg:hidden block fixed bg-[#D83546] top-0 z-[59] p-20 pt-40 h-full duration-500 ${hamburger ? 'right-0' : '-right-64'}`}>
                 <ul className='text-white'>
                     {
                         NavArray.map((e, i) => {

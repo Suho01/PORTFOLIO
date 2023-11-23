@@ -9,7 +9,7 @@ function Projects() {
             "title" : "[NEW!] 리액트로 만든 써브웨이",
             "type" : "webapp",
             "use" : "·React　·TailwindCSS　·JavaScript",
-            "date" : 3,
+            "date" : 5,
             "story" : "리액트로 만든 써브웨이 클론코딩, 반응형 구현",
             "link" : "https://suho01-subway.vercel.app/"
         },
@@ -211,9 +211,9 @@ function Projects() {
                 </ul>
             </div>
         </div>
-        {/* {
+        {
             isModal && <Modal closeModal={setIsModal} />
-        } */}
+        }
         </>
     )
 }

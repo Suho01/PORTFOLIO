@@ -10,22 +10,22 @@ function Footer() {
         {
             "name" : faGithub,
             "link" : "https://github.com/Suho01",
-            "color" : "black"
+            "color" : "hover:text-black"
         },
         {
             "name" : faYoutube,
             "link" : "https://www.youtube.com/@suhochofree/featured",
-            "color" : "red-600"
+            "color" : "hover:text-red-600"
         },
         {
             "name" : faComments,
             "link" : "https://open.kakao.com/me/o2asis",
-            "color" : "yellow-500"
+            "color" : "hover:text-yellow-500"
         },
         {
             "name" : faEnvelopeOpen,
             "link" : "mailto:suhoprimavera@gmail.com",
-            "color" : "slate-500"
+            "color" : "hover:text-slate-500"
         },
     ];
 
@@ -41,7 +41,7 @@ function Footer() {
                     {
                         icon.map((e, i) => {
                             return (
-                                <li key={i}><NavLink to={e.link}><FontAwesomeIcon icon={e.name} className={`text-white hover:text-${e.color} duration-500 lg:text-7xl md:text-6xl text-5xl`} /></NavLink></li>                                
+                                <li key={i}><NavLink to={e.link}><FontAwesomeIcon icon={e.name} className={`text-white ${e.color} duration-500 lg:text-7xl md:text-6xl text-5xl`} /></NavLink></li>
                             )
                         })
                     }
@@ -51,7 +51,7 @@ function Footer() {
                     <li className='lg:text-sm text-xs pt-3 pb-1'>본 사이트는 상업적 목적이 아닌 이지연 개인 포트폴리오 사이트로 제작되었습니다.</li>
                     <li className='lg:text-sm text-xs pb-3'>일부 이미지 및 폰트 등은 그 출처가 따로 있음을 밝힙니다.</li>
                     <li className='lg:text-sm text-xs py-3'>해당 사이트는 1920*1080 해상도에 최적화 되었습니다.</li>
-                    <li className='lg:text-sm text-xs pt-3'>마지막 수정일 : 2023.11.22</li>
+                    <li className='lg:text-sm text-xs pt-3'>마지막 수정일 : 2023.11.23</li>
                 </ul>
             </div>
         </div>
