@@ -6,6 +6,15 @@ function Projects() {
     const imgArray = [
         {
             "img" : "subway-react",
+            "title" : "[진행중] 리액트로 만든 공차",
+            "type" : "webapp",
+            "use" : "·React　·TailwindCSS　·JavaScript",
+            "date" : 0,
+            "story" : "리액트로 만든 공차 클론코딩, 반응형 구현",
+            "link" : "https://suho01-gongcha.vercel.app/"
+        },
+        {
+            "img" : "subway-react",
             "title" : "[NEW!] 리액트로 만든 써브웨이",
             "type" : "webapp",
             "use" : "·React　·TailwindCSS　·JavaScript",
@@ -212,7 +221,7 @@ function Projects() {
             </div>
         </div>
         {
-            isModal && <Modal closeModal={setIsModal} />
+            // isModal && <Modal closeModal={setIsModal} />
         }
         </>
     )
