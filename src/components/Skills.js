@@ -44,7 +44,8 @@ function Skills() {
                 "Github" : "원하는 시점으로 복원 가능하며 여러 사람이 하나의 소스를 작업해도 충돌을 방지할 수 있습니다.",
                 "Figma" : "피그마로 레이아웃 구상을 할 수 있습니다.",
                 "Adobe Photoshop" : "이미지/사진 편집, 로고/배너 만들기, 움직이는 이미지를 만들 수 있습니다.",
-                "Adobe Illustrator" : "벡터 이미지, 3d이미지를 만들 수 있습니다."
+                "Adobe Illustrator" : "벡터 이미지, 3d 이미지를 만들고, 실제 인쇄물을 작업하는 파일을 만들 수 있습니다.",
+                "Adobe After Effects" : "키프레임을 이해하고 다양한 2d 영상을 만들 수 있습니다."
             }
         }
     ];
@@ -77,7 +78,7 @@ function Skills() {
             img : "nextjs.png",
             name : "NextJS",
             desc : "사용해봤습니다."
-        },
+        }
     ];
     const ToolMarkup = [
         {
@@ -147,8 +148,13 @@ function Skills() {
         {
             img : "illu.png",
             name : "Adobe Illustrator",
-            desc : "벡터 이미지, 3d이미지를 만들 수 있습니다."
+            desc : "벡터 이미지, 3d 이미지를 만들고, 실제 인쇄물을 작업하는 파일을 만들 수 있습니다."
         },
+        {
+            img : "ae.png",
+            name : "Adobe After Effects",
+            desc : "키프레임을 이해하고 다양한 2d 영상을 만들 수 있습니다."
+        }
     ];
 
     const theme = useSelector(state => state.dark);

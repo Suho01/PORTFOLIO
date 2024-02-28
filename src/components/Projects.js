@@ -6,7 +6,7 @@ function Projects() {
     const imgArray = [
         {
             "img" : "gongcha-react",
-            "title" : "[NEW!] 리액트로 만든 공차",
+            "title" : "리액트로 만든 공차",
             "type" : "webapp",
             "use" : "·React　·TailwindCSS　·JavaScript",
             "date" : 5,
