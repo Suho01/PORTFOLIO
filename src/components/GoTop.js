@@ -1,10 +1,15 @@
 import { faAngleUp, faComments } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
 function GoTop() {
+    const [isVisible, setIsVisible] = useState(false);
+    useEffect (() => {
+        
+    }, [isVisible]);
+
     const goTop = () => {
         window.scrollTo({
             top : 0,
