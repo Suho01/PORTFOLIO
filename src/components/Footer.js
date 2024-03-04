@@ -51,7 +51,7 @@ function Footer() {
                     <li className='lg:text-sm text-xs pt-3 pb-1'>본 사이트는 상업적 목적이 아닌 이지연 개인 포트폴리오 사이트로 제작되었습니다.</li>
                     <li className='lg:text-sm text-xs pb-3'>일부 이미지 및 폰트 등은 그 출처가 따로 있음을 밝힙니다.</li>
                     <li className='lg:text-sm text-xs py-3'>해당 사이트는 1920*1080 해상도에 최적화 되었습니다.</li>
-                    <li className='lg:text-sm text-xs pt-3'>마지막 수정일 : 2024.02.29</li>
+                    <li className='lg:text-sm text-xs pt-3'>마지막 수정일 : 2024.03.04</li>
                 </ul>
             </div>
         </div>
