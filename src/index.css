@@ -21,6 +21,15 @@ a {text-decoration: none; color: #000;}
     font-family: 'Playfair Display', serif;
 }
 
+.go-top-button {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.go-top-button.show {
+    opacity: 1;
+}
+
 /* pc버전일 때 */
 @media screen and (min-width: 1024px) {
     .frontback::after {
