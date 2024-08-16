@@ -1,179 +1,27 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
+import projectsData from './../projects.json';
 
 function Projects() {
-
-    const imgArray = [
-        {
-            "img" : "gongcha-react",
-            "title" : "리액트로 만든 공차",
-            "type" : "webapp",
-            "use" : "·React　·TailwindCSS　·JavaScript",
-            "date" : 5,
-            "story" : "리액트로 만든 공차 클론코딩, 반응형 구현",
-            "link" : "https://suho01-gongcha.vercel.app/"
-        },
-        {
-            "img" : "subway-react",
-            "title" : "리액트로 만든 써브웨이",
-            "type" : "webapp",
-            "use" : "·React　·TailwindCSS　·JavaScript",
-            "date" : 5,
-            "story" : "리액트로 만든 써브웨이 클론코딩, 반응형 구현",
-            "link" : "https://suho01-subway.vercel.app/"
-        },
-        {
-            "img" : "portfolio",
-            "title" : "Developing Frontend Experiences",
-            "type" : "personal",
-            "use" : "·React　·TailwindCSS　·JavaScript",
-            "date" : 30,
-            "story" : "filter함수 사용, 다크모드, 반응형 구현 개인 포트폴리오",
-            "link" : "https://suho01.vercel.app/"
-        },
-        {
-            "img" : "benjamin",
-            "title" : "벤자민 버튼의 시간은 거꾸로 간다",
-            "type" : "personal",
-            "use" : "·React　·TailwindCSS　·JavaScript",
-            "date" : 1,
-            "story" : "거꾸로 가는 시계",
-            "link" : "https://benjamin-button.vercel.app/"
-        },
-        {
-            "img" : "teampuri",
-            "title" : "푸리푸리",
-            "type" : "team",
-            "use" : "·React　·TailwindCSS　·Firebase　·JavaScript　·Redux　·Node.js",
-            "date" : 35,
-            "story" : "메인 페이지, 로그인 및 회원가입 기능, 다크모드, 다국어, 반응형 구현",
-            "contribution" : " (기여도 : 25%)",
-            "link" : "https://team-puri.vercel.app/"
-        },
-        {
-            "img" : "festival",
-            "title" : "부산 국제 페스티벌",
-            "type" : "personal",
-            "use" : "·React　·Styled Components　·JavaScript　·API",
-            "date" : 3,
-            "story" : "filter함수를 이용해 각 구군마다 컨텐츠가 다르게 나타나는 기능 구현, 반응형 구현",
-            "link" : "https://festival-mu.vercel.app/"
-        },
-        {
-            "img" : "quiz",
-            "title" : "Brain Storm : Quiz Edition",
-            "type" : "personal",
-            "use" : "·React　·TailwindCSS　·JavaScript",
-            "date" : 3,
-            "story" : "랜덤함수로 문제 순서 및 문제 유형 구현, 오답노트 구현, 반응형 구현",
-            "link" : "https://quiz-rust-one.vercel.app/"
-        },
-        {
-            "img" : "police",
-            "title" : "경찰청",
-            "type" : "webapp",
-            "use" : "·HTML　·SCSS　·JavaScript",
-            "date" : 3,
-            "story" : "클론코딩",
-            "link" : "https://suho01.github.io/police/"
-        },
-        {
-            "img" : "seoul",
-            "title" : "서울특별시 교육감 조희연",
-            "type" : "webapp",
-            "use" : "·HTML　·SCSS　·JavaScript",
-            "date" : 1,
-            "story" : "리디자인",
-            "link" : "https://suho01.github.io/seoul/"
-        },
-        {
-            "img" : "burgerking",
-            "title" : "버거킹",
-            "type" : "webapp",
-            "use" : "·HTML　·SCSS　·JavaScript",
-            "date" : 5,
-            "story" : "리디자인",
-            "link" : "https://suho01.github.io/burgerking/"
-        },
-        {
-            "img" : "gongcha",
-            "title" : "공차",
-            "type" : "webapp",
-            "use" : "·HTML　·CSS　·JavaScript",
-            "date" : 6,
-            "story" : "클론코딩",
-            "link" : "https://suho01.github.io/gongcha/"
-        },
-        {
-            "img" : "subway",
-            "title" : "써브웨이",
-            "type" : "webapp",
-            "use" : "·HTML　·CSS　·JavaScript",
-            "date" : 12,
-            "story" : "클론코딩",
-            "link" : "https://suho01.github.io/subway/"
-        },
-        {
-            "img" : "tae",
-            "title" : "태성김치",
-            "type" : "team",
-            "use" : "·HTML　·CSS　·JavaScript",
-            "date" : 28,
-            "story" : "디자인 및 모바일 적응형 제작",
-            "contribution" : " (기여도 : 20%)",
-            "link" : "http://www.tskimchi.com/sub/index.php"
-        },
-        {
-            "img" : "kilf",
-            "title" : "한국지방세연구원",
-            "type" : "team",
-            "use" : "·HTML　·CSS　·JavaScript",
-            "date" : 28,
-            "story" : "디자인 및 모바일 반응형 제작",
-            "contribution" : " (기여도 : 20%)",
-            "link" : "https://www.kilf.re.kr/"
-        },
-        {
-            "img" : "korean",
-            "title" : "한국문학번역원",
-            "type" : "team",
-            "use" : "·HTML　·CSS　·JavaScript",
-            "date" : 62,
-            "story" : "디자인 및 모바일 적응형 제작",
-            "contribution" : " (기여도 : 20%)",
-            "link" : "https://ltikorea.or.kr/"
-        },
-        {
-            "img" : "kukeeper",
-            "title" : "Ku : Keeper",
-            "type" : "team",
-            "use" : "·Arduino　·MySQL　·Apache　·PHP　·C++",
-            "date" : 146,
-            "contribution" : " (기여도 : 45%)",
-            "story" : "아두이노 모듈로 만드는 도어락 졸업작품, 관리 기능은 웹 페이지 및 서버를 통해 구현",
-            "link" : ""
-        },
-        {
-            "img" : "kumeal",
-            "title" : "Starlight",
-            "type" : "personal",
-            "use" : "·Swift",
-            "date" : 7,
-            "story" : "Swift로 만드는 리뷰 애플리케이션",
-            "link" : ""
-        }
-    ];
-
+    const projectsArray = ["SHOW ALL", "PERSONAL", "TEAM", "WEB APP", "WORK"];
+    const [projects, setProjects] = useState([]);
     const [filter, setFilter] = useState('');
-    const filterData = imgArray.filter((item) => {
-        if (!filter) return true;
-        return item.type === filter;
+    const [active, setActive] = useState('SHOW ALL');
+
+    useEffect(() => {
+        setProjects(projectsData);
+    }, []);
+
+
+    const filterData = (projects || []).filter((item) => {
+        if (!filter || filter === "SHOW ALL") return true;
+        return item.type.toLowerCase() === filter.toLowerCase();
     });
 
-    const [active, setActive] = useState('');
-    const activeFilter = (filter) => {
-        setActive(filter);
-    };
+    const handleFilterClick = (filterType) => {
+        setFilter(filterType === "SHOW ALL" ? "" : filterType);
+        setActive(filterType);
+    }
 
     const [isModal, setIsModal] = useState(false);
     const theme = useSelector(state => state.dark);
@@ -191,10 +39,16 @@ function Projects() {
                     </div>
                 </div>
                 <div className='lg:flex md:flex lg:justify-center md:justify-center gap-x-2 my-20 px-[2%]'>
-                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === '' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter(""); activeFilter("");}}>SHOW ALL ({imgArray.length})</div>
-                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'personal' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter("personal"); activeFilter("personal");}}>PERSONAL (5)</div>
-                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'team' ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => {setFilter("team"); activeFilter("team");}}>TEAM (5)</div>
-                    <div className={`lg:text-2xl md:text-lg text-sm cursor-pointer bg-white p-3 text-[#D83546] font-bold border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === 'webapp' ? 'activeColor' : ''}`} onClick={() => {setFilter("webapp"); activeFilter("webapp");}}>WEB APP (7)</div>
+                    {
+                        projectsArray.map((e, i) => {
+                            const count = e === "SHOW ALL" ? projects.length : projects.filter(p => p.type.toLowerCase() === e.toLowerCase()).length;
+                            
+                            return (
+                                <div key={i} className={`lg:text-2xl md:text-lg text-sm cursor-pointer p-3 font-bold bg-white text-[#D83546] border-[#D83546] border-2 duration-500 hover:bg-[#D83546] hover:text-white ${active === e ? 'activeColor' : ''} lg:mb-0 md:mb-0 mb-2`} onClick={() => handleFilterClick(e)}>{e} ({count})</div>
+                            );
+                        })
+                    }
+                
                 </div>
                 <ul className='flex flex-wrap mx-auto lg:justify-start lg:gap-x-5 justify-between px-[2%] gap-y-5 pb-40'>
                     {
