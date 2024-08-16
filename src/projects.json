@@ -1,5 +1,75 @@
 [
     {
+        "img": "test",
+        "title": "집쇼코리아 CMS",
+        "type": "WORK",
+        "use": "·React ·Tailwindcss",
+        "date": 0,
+        "story": "집쇼코리아 관리자 페이지입니다.",
+        "contribution": " (기여도 : 100%)",
+        "link": ""
+    },
+    {
+        "img": "test",
+        "title": "집쇼코리아 랜딩페이지",
+        "type": "WORK",
+        "use": "·React ·Tailwindcss",
+        "date": 0,
+        "story": "집쇼코리아 랜딩페이지",
+        "contribution": " (기여도 : 100%)",
+        "link": ""
+    },
+    {
+        "img": "test",
+        "title": "연세대학교 Virtual Tour 멘사퀴즈 이벤트 CMS",
+        "type": "WoRK",
+        "use": "·HTML ·CSS ·JavaScript ·EJS ·MATTERPORT ·MongoDB ·JAVA",
+        "date": 30,
+        "story": "연세대학교 Virtual Tour 멘사퀴즈 이벤트 관리자 페이지입니다.",
+        "contribution": " (기여도 : 100%)",
+        "link": ""
+    },
+    {
+        "img": "test",
+        "title": "연세대학교 Virtual Tour 멘사퀴즈 이벤트",
+        "type": "WoRK",
+        "use": "·HTML ·CSS ·JavaScript ·EJS ·MATTERPORT",
+        "date": 30,
+        "story": "연세대학교 Virtual Tour 멘사퀴즈 이벤트",
+        "contribution": " (기여도 : 100%)",
+        "link": ""
+    },
+    {
+        "img": "test",
+        "title": "충남도청 디지털트윈 CMS",
+        "type": "WoRK",
+        "use": "·HTML ·CSS ·JavaScript ·JQuery ·API ·MATTERPORT ·JAVA",
+        "date": 30,
+        "story": "충남도청 디지털트윈 관리자 페이지입니다.",
+        "contribution": " (기여도 : 50%)",
+        "link": ""
+    },
+    {
+        "img": "test",
+        "title": "충남도청 키오스크",
+        "type": "WoRK",
+        "use": "·HTML ·CSS ·JavaScript ·JQuery ·API",
+        "date": 30,
+        "story": "충남도청 키오스크",
+        "contribution": " (기여도 : 100%)",
+        "link": ""
+    },
+    {
+        "img": "mypill",
+        "title": "마이필, 나만의 맞춤 영양제",
+        "type": "WoRK",
+        "use": "·React ·Styled Components ·JavaScript ·API",
+        "date": 150,
+        "story": "홈페이지 유지보수, UI/UX 리디자인, 반응형 구현, AI 빅데이터 분석으로 맞춤 영양제 추천",
+        "contribution": " (기여도 : 50%)",
+        "link": "https://mypill.io/"
+    },
+    {
         "img": "gongcha-react",
         "title": "리액트로 만든 공차",
         "type": "WEB APP",
