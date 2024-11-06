@@ -10,8 +10,6 @@ import Footer from './components/Footer';
 import Nav from './components/Nav';
 import GoTop from './components/GoTop';
 import Loading from './pages/Loading';
-import { Route, Routes } from 'react-router-dom';
-import Sancho from './pages/Sancho';
 
 function App() {
     const [loading, setLoading] = useState(true);
@@ -36,9 +34,6 @@ function App() {
                     </Provider>
                 )
             }
-            <Routes>                
-                <Route path='/sancho' element={<Sancho />}></Route>
-            </Routes>
         </>
     );
 }
