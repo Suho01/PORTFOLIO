@@ -57,7 +57,7 @@ function Projects() {
                                 <>
                                     <li key={i} className={`relative lg:basis-[32%] md:basis-[49%] basis-full cursor-pointer border shadow-md bg-white`} onClick={() => setIsModal(true)}>
                                         <a href={e.link} target='_blank'>
-                                            <img className='w-full' src={`./../../img/${e.img}.png`} alt={i} />
+                                            <img className='w-full aspect-square object-cover' src={`./../../img/${e.img}.png`} alt={i} />
                                             <ul className='p-5'>
                                                 <li key={i} className='pb-2 text-xl lg:basis-[33%] md:basis-[49%] basis-full cursor-pointer font-semibold'>{e.title}<span className='text-base font-normal text-black'>{e.contribution}</span></li>
                                                 <li className='pb-2 text-sm text-[#D83546] font-bold'>{e.use}</li>

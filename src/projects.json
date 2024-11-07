@@ -1,11 +1,21 @@
 [
     {
+        "img": "ifac",
+        "title": "한국근대문학관 온라인 기획전시",
+        "type": "WORK",
+        "use": "·HTML ·CSS ·JavaScript ·JQuery ·MATTERPORT",
+        "date": 30,
+        "story": "메타포트 태그 및 팝업 커스텀, 반응형 구현",
+        "contribution": " (기여도 : 100%)",
+        "link": "https://zipshow-static-web.s3.ap-northeast-2.amazonaws.com/ifac2022/vr/index.html"
+    },
+    {
         "img": "test",
         "title": "집쇼코리아 CMS",
         "type": "WORK",
         "use": "·React ·Tailwindcss",
-        "date": 0,
-        "story": "집쇼코리아 관리자 페이지입니다.",
+        "date": 30,
+        "story": "집쇼코리아 관리자 페이지",
         "contribution": " (기여도 : 100%)",
         "link": ""
     },
@@ -14,60 +24,60 @@
         "title": "집쇼코리아 랜딩페이지",
         "type": "WORK",
         "use": "·React ·Tailwindcss",
-        "date": 0,
+        "date": 30,
         "story": "집쇼코리아 랜딩페이지",
         "contribution": " (기여도 : 100%)",
         "link": ""
     },
     {
-        "img": "test",
+        "img": "yonsei-cms",
         "title": "연세대학교 Virtual Tour 멘사퀴즈 이벤트 CMS",
-        "type": "WoRK",
-        "use": "·HTML ·CSS ·JavaScript ·EJS ·MATTERPORT ·MongoDB ·JAVA",
+        "type": "WORK",
+        "use": "·HTML ·CSS ·JavaScript ·JQuery ·EJS",
         "date": 30,
-        "story": "연세대학교 Virtual Tour 멘사퀴즈 이벤트 관리자 페이지입니다.",
-        "contribution": " (기여도 : 100%)",
-        "link": ""
+        "story": "연세대학교 Virtual Tour 멘사퀴즈 이벤트 관리자 페이지",
+        "contribution": " (기여도 : 50%)",
+        "link": "https://virtual.yonsei.ac.kr/login"
+    },
+    {
+        "img": "yonsei-dx",
+        "title": "연세대학교 Virtual Tour 멘사퀴즈 이벤트",
+        "type": "WORK",
+        "use": "·HTML ·CSS ·JavaScript ·JQuery ·EJS ·MATTERPORT",
+        "date": 30,
+        "story": "연세대학교 Virtual Tour 멘사퀴즈 이벤트",
+        "contribution": " (기여도 : 50%)",
+        "link": "https://virtual.yonsei.ac.kr/event/"
     },
     {
         "img": "test",
-        "title": "연세대학교 Virtual Tour 멘사퀴즈 이벤트",
-        "type": "WoRK",
-        "use": "·HTML ·CSS ·JavaScript ·EJS ·MATTERPORT",
+        "title": "충남도청 메타포트",
+        "type": "WORK",
+        "use": "·HTML ·CSS ·JavaScript ·JQuery ·API ·MATTERPORT",
         "date": 30,
-        "story": "연세대학교 Virtual Tour 멘사퀴즈 이벤트",
-        "contribution": " (기여도 : 100%)",
+        "story": "충남도청 디지털트윈 관리자 페이지",
+        "contribution": " (기여도 : 50%)",
         "link": ""
     },
     {
         "img": "test",
         "title": "충남도청 디지털트윈 CMS",
-        "type": "WoRK",
-        "use": "·HTML ·CSS ·JavaScript ·JQuery ·API ·MATTERPORT ·JAVA",
+        "type": "WORK",
+        "use": "·HTML ·CSS ·JavaScript ·JQuery ·API",
         "date": 30,
-        "story": "충남도청 디지털트윈 관리자 페이지입니다.",
+        "story": "충남도청 디지털트윈 관리자 페이지",
         "contribution": " (기여도 : 50%)",
         "link": ""
     },
     {
         "img": "test",
         "title": "충남도청 키오스크",
-        "type": "WoRK",
+        "type": "WORK",
         "use": "·HTML ·CSS ·JavaScript ·JQuery ·API",
         "date": 30,
         "story": "충남도청 키오스크",
         "contribution": " (기여도 : 100%)",
         "link": ""
-    },
-    {
-        "img": "mypill",
-        "title": "마이필, 나만의 맞춤 영양제",
-        "type": "WoRK",
-        "use": "·React ·Styled Components ·JavaScript ·API",
-        "date": 150,
-        "story": "홈페이지 유지보수, UI/UX 리디자인, 반응형 구현, AI 빅데이터 분석으로 맞춤 영양제 추천",
-        "contribution": " (기여도 : 50%)",
-        "link": "https://mypill.io/"
     },
     {
         "img": "gongcha-react",
