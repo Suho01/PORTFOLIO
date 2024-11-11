@@ -1,6 +1,6 @@
 [
     {
-        "img": "ifac",
+        "img": "ifac2022",
         "title": "한국근대문학관 온라인 기획전시",
         "type": "WORK",
         "use": "·HTML ·CSS ·JavaScript ·JQuery ·MATTERPORT",
@@ -10,34 +10,14 @@
         "link": "https://zipshow-static-web.s3.ap-northeast-2.amazonaws.com/ifac2022/vr/index.html"
     },
     {
-        "img": "test",
-        "title": "집쇼코리아 CMS",
-        "type": "WORK",
-        "use": "·React ·Tailwindcss",
-        "date": 30,
-        "story": "집쇼코리아 관리자 페이지",
-        "contribution": " (기여도 : 100%)",
-        "link": ""
-    },
-    {
-        "img": "test",
+        "img": "zipshowkorea-landing",
         "title": "집쇼코리아 랜딩페이지",
         "type": "WORK",
         "use": "·React ·Tailwindcss",
         "date": 30,
         "story": "집쇼코리아 랜딩페이지",
         "contribution": " (기여도 : 100%)",
-        "link": ""
-    },
-    {
-        "img": "yonsei-cms",
-        "title": "연세대학교 Virtual Tour 멘사퀴즈 이벤트 CMS",
-        "type": "WORK",
-        "use": "·HTML ·CSS ·JavaScript ·JQuery ·EJS",
-        "date": 30,
-        "story": "연세대학교 Virtual Tour 멘사퀴즈 이벤트 관리자 페이지",
-        "contribution": " (기여도 : 50%)",
-        "link": "https://virtual.yonsei.ac.kr/login"
+        "link": "https://zipshowkorea-landing-react.vercel.app/"
     },
     {
         "img": "yonsei-dx",
@@ -51,33 +31,33 @@
     },
     {
         "img": "test",
-        "title": "충남도청 메타포트",
+        "title": "충남도청 3D 디지털트윈",
         "type": "WORK",
         "use": "·HTML ·CSS ·JavaScript ·JQuery ·API ·MATTERPORT",
         "date": 30,
         "story": "충남도청 디지털트윈 관리자 페이지",
         "contribution": " (기여도 : 50%)",
-        "link": ""
+        "link": "https://www.chungnam.go.kr/3dtwin_01/index.htm"
     },
     {
         "img": "test",
-        "title": "충남도청 디지털트윈 CMS",
+        "title": "충남도청 3D 디지털트윈 CMS",
         "type": "WORK",
         "use": "·HTML ·CSS ·JavaScript ·JQuery ·API",
         "date": 30,
-        "story": "충남도청 디지털트윈 관리자 페이지",
+        "story": "퍼블리싱 및 키오스크 API 연결",
         "contribution": " (기여도 : 50%)",
         "link": ""
     },
     {
         "img": "test",
-        "title": "충남도청 키오스크",
+        "title": "충남도청 3D 디지털트윈 키오스크",
         "type": "WORK",
         "use": "·HTML ·CSS ·JavaScript ·JQuery ·API",
         "date": 30,
         "story": "충남도청 키오스크",
         "contribution": " (기여도 : 100%)",
-        "link": ""
+        "link": "https://www.chungnam.go.kr/3dtwin_01/index.htm"
     },
     {
         "img": "gongcha-react",

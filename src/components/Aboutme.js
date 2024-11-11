@@ -28,7 +28,7 @@ function Aboutme() {
                         <li><span className=''>이름</span> : 이지연(지바오)</li>
                         <li>학력 : 건국대학교 컴퓨터공학과</li>
                         <li>E-mail : suhoprimavera@gmail.com</li>
-                        <li>MBTI : ENFJ 정의로운 사회운동가</li>
+                        <li>MBTI : ENFP</li>
                         <li><span className='hover:font-bold'>#협업좋아요 </span><span className='hover:font-bold'>#선도자 </span><span className='hover:font-bold'>#MZ막차 </span><span className='hover:font-bold'>#소금빵 </span><span className='hover:font-bold'>#푸바오 </span></li><br /><br />
                         <li className={`font-bold lg:text-3xl text-xl relative after:w-4 after:h-1 after:bg-[#D83546] after:absolute after:left-0 after:-top-1 inline-block ${theme === 'light' ? 'text-black' : 'text-white'} pb-2`}>Developing Frontend</li>
                         <li>수학 문제 푸는 것을 좋아하고, 수학 문제를 풀듯이 복잡한 개발 문제를 해결하는 것을 좋아하며 디자인에 대한 열정은 제 작업에 창의성을 불어넣습니다.<br />이러한 다재다능함은 제 강점 중 하나입니다.</li><br /><br />
