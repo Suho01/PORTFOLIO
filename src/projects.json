@@ -1,21 +1,31 @@
 [
     {
-        "img": "ifac2022",
+        "img": "ifac",
         "title": "한국근대문학관 온라인 기획전시",
         "type": "WORK",
         "use": "·HTML ·CSS ·JavaScript ·JQuery ·MATTERPORT",
         "date": 30,
-        "story": "메타포트 태그 및 팝업 커스텀, 반응형 구현",
+        "story": "메타포트 태그 및 팝업 커스텀, 음성안내 오디오 재생 및 프로그레스 구현, 사용자의 대답에 따른 테스트 (MBTI) 구현, 반응형 구현",
         "contribution": " (기여도 : 100%)",
-        "link": "https://zipshow-static-web.s3.ap-northeast-2.amazonaws.com/ifac2022/vr/index.html"
+        "link": "https://static.zipshowkorea.com/project/ifac2022/vr/index.html"
     },
     {
-        "img": "zipshowkorea-landing",
-        "title": "집쇼코리아 랜딩페이지",
+        "img": "zipshowkorea-cms",
+        "title": "집쇼코리아 CMS",
         "type": "WORK",
         "use": "·React ·Tailwindcss",
         "date": 30,
-        "story": "집쇼코리아 랜딩페이지",
+        "story": "퍼블리싱 완료, 추후 API 연결 예정",
+        "contribution": " (기여도 : 100%)",
+        "link": "https://zipshowkorea-cms-react.vercel.app/"
+    },
+    {
+        "img": "zipshowkorea-landing",
+        "title": "집쇼코리아 홈페이지",
+        "type": "WORK",
+        "use": "·React ·Tailwindcss",
+        "date": 30,
+        "story": "카카오맵 API 사용, 다국어, 반응형 구현",
         "contribution": " (기여도 : 100%)",
         "link": "https://zipshowkorea-landing-react.vercel.app/"
     },
@@ -30,17 +40,17 @@
         "link": "https://virtual.yonsei.ac.kr/event/"
     },
     {
-        "img": "test",
+        "img": "chungnam",
         "title": "충남도청 3D 디지털트윈",
         "type": "WORK",
         "use": "·HTML ·CSS ·JavaScript ·JQuery ·API ·MATTERPORT",
         "date": 30,
-        "story": "충남도청 디지털트윈 관리자 페이지",
+        "story": "메타포트 태그 및 팝업 커스텀, 음성안내 오디오 재생 및 프로그레스 구현, 반응형 구현",
         "contribution": " (기여도 : 50%)",
-        "link": "https://www.chungnam.go.kr/3dtwin_01/index.htm"
+        "link": "https://www.chungnam.go.kr/3dtwin_013/index.html?code=main&device=kiosk"
     },
     {
-        "img": "test",
+        "img": "chungnam-3dvista",
         "title": "충남도청 3D 디지털트윈 CMS",
         "type": "WORK",
         "use": "·HTML ·CSS ·JavaScript ·JQuery ·API",
@@ -50,14 +60,14 @@
         "link": ""
     },
     {
-        "img": "test",
+        "img": "chungnam-kiosk",
         "title": "충남도청 3D 디지털트윈 키오스크",
         "type": "WORK",
         "use": "·HTML ·CSS ·JavaScript ·JQuery ·API",
         "date": 30,
-        "story": "충남도청 키오스크",
+        "story": "키오스크 최적화 반응형 구현, 키오스크 터치 수 API 연결",
         "contribution": " (기여도 : 100%)",
-        "link": "https://www.chungnam.go.kr/3dtwin_01/index.htm"
+        "link": "https://www.chungnam.go.kr/3dtwin_011/index.html"
     },
     {
         "img": "gongcha-react",
