@@ -23,7 +23,6 @@ function Projects() {
         setActive(filterType);
     }
 
-    const [isModal, setIsModal] = useState(false);
     const theme = useSelector(state => state.dark);
 
     return (
@@ -55,7 +54,7 @@ function Projects() {
                         filterData.map((e, i) => {
                             return (
                                 <>
-                                    <li key={i} className={`relative lg:basis-[32%] md:basis-[49%] basis-full cursor-pointer border shadow-md bg-white`} onClick={() => setIsModal(true)}>
+                                    <li key={i} className={`relative lg:basis-[32%] md:basis-[49%] basis-full cursor-pointer border shadow-md bg-white`}>
                                         <a href={e.link} target='_blank'>
                                             <img className='w-full aspect-square object-cover' src={`./../../img/${e.img}.png`} alt={i} />
                                             <ul className='p-5'>
@@ -74,28 +73,6 @@ function Projects() {
                 </ul>
             </div>
         </div>
-        {
-            // isModal && <Modal closeModal={setIsModal} />
-        }
-        </>
-    )
-}
-
-function Modal(props) {
-    useEffect(() => {
-        document.body.style.overflow = 'hidden';
-        return () => {
-            document.body.style.overflow = 'unset';
-        };
-    }, []);
-    return (
-        <>
-            <div className='fixed w-full h-full bg-black/50 left-0 top-0 z-50' onClick={() => {props.closeModal(false)}}>
-                <div className="bg-white fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2">
-                    <p className='p-5'>test</p>
-                    <button className="absolute top-5 right-5 text-xl" onClick={() => {props.closeModal(false)}}>❌</button>
-                </div>
-            </div>
         </>
     )
 }
