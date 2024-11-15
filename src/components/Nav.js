@@ -43,8 +43,8 @@ function Nav() {
         <>
         <div className='lg:max-w-7xl md:max-w-3xl sm:max-w-sm'>
             {/* pc nav start */}
-            <div className={`fixed left-1/2 -translate-x-1/2 ${theme === 'light' ? 'bg-white' : 'bg-[#272929]'} lg:w-full z-[999] shadow-md lg:block hidden`}>
-                <ul className='lg:max-w-7xl mx-auto flex justify-between py-6 items-center'>
+            <div className={`fixed left-1/2 -translate-x-1/2 ${theme === 'light' ? 'bg-white/50 backdrop-blur-2xl' : 'bg-[#272929]/50 backdrop-blur-2xl'} lg:w-full z-[999] shadow-md lg:block hidden`}>
+                <ul className='lg:max-w-7xl mx-auto flex justify-between py-6 items-center px-5'>
                     <li><NavLink to='/' className={`${theme === 'light' ? 'text-black' : 'text-white'} font-bold text-2xl`}><span className={`text-base ${theme === 'light' ? 'text-gray-600' : 'text-gray-400'}`}>Frontend Developer</span><br />Jiyeon's Portfolio</NavLink></li>
                     {
                         NavArray.map((e, i) => {
@@ -62,7 +62,7 @@ function Nav() {
             {/* pc nav end */}
 
             {/* mobile nav start */}
-            <ul className={`lg:hidden flex fixed z-[99] items-center justify-between px-[5%] ${theme === 'light' ? 'bg-white' : 'bg-[#272929]'} w-full h-20 shadow-md`}>
+            <ul className={`lg:hidden flex fixed z-[99] items-center justify-between px-[5%] ${theme === 'light' ? 'bg-white/50 backdrop-blur-2xl' : 'bg-[#272929]/50 backdrop-blur-2xl'} w-full h-20 shadow-md`}>
                 <li><NavLink to='/' className={`${theme === 'light' ? 'text-black' : 'text-white'} font-bold text-lg`}><span className={`text-xs ${theme === 'light' ? 'text-gray-600' : 'text-gray-400'}`}>Frontend Developer</span><br />Jiyeon's Portfolio</NavLink></li>
                 <li className={`cursor-pointer ${theme === 'light' ? 'text-black' : 'text-white'}`} onClick={() => toggleHamburger()}>
                     {
